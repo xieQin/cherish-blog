@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-04-14T02:40:48.597Z</updated>
+  <updated>2016-05-09T09:46:48.278Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vue.js</title>
+    <link href="http://yoursite.com/2016/05/09/Vue/"/>
+    <id>http://yoursite.com/2016/05/09/Vue/</id>
+    <published>2016-05-09T09:46:23.000Z</published>
+    <updated>2016-05-09T09:46:48.278Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="http://yoursite.com/tags/Vue/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello Hexo</title>
