@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-05-23T05:45:12.688Z</updated>
+  <updated>2016-05-23T06:17:35.172Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,27 +16,74 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>&#39;Markdown语法总结&#39;</title>
+    <title>Markdown语法总结</title>
     <link href="http://yoursite.com/2016/05/23/Markdown%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/"/>
     <id>http://yoursite.com/2016/05/23/Markdown语法总结/</id>
     <published>2016-05-23T05:45:12.000Z</published>
-    <updated>2016-05-23T05:45:12.688Z</updated>
+    <updated>2016-05-23T06:17:35.172Z</updated>
     
-    <content type="html"></content>
+    <content type="html">&lt;h2 id=&quot;特殊字符自动转换&quot;&gt;&lt;a href=&quot;#特殊字符自动转换&quot; class=&quot;headerlink&quot; title=&quot;特殊字符自动转换&quot;&gt;&lt;/a&gt;特殊字符自动转换&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;&amp;amp;字符&lt;br&gt;&amp;lt;字符&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;区块元素&quot;&gt;&lt;a href=&quot;#区块元素&quot; class=&quot;headerlink&quot; title=&quot;区块元素&quot;&gt;&lt;/a&gt;区块元素&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;段落和换行&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;标题&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;类Setext形式&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;This is an H1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;=============&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;This is an H2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;-------------&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;类Atx形式&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 这是H1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;## 这是H2&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;区块引用&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;代码区块&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;分割线&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;区段元素&quot;&gt;&lt;a href=&quot;#区段元素&quot; class=&quot;headerlink&quot; title=&quot;区段元素&quot;&gt;&lt;/a&gt;区段元素&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;链接&lt;br&gt;这是&lt;a href=&quot;http://www.cherishhsieh.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;我的blog&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;强调&lt;br&gt;&lt;strong&gt;文本区域&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;代码&lt;br&gt;Use the &lt;code&gt;printf()&lt;/code&gt; function&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;图片&lt;br&gt;&lt;img src=&quot;https://avatars2.githubusercontent.com/u/6762420?v=3&amp;amp;s=460&quot; alt=&quot;Alt text&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;其他&quot;&gt;&lt;a href=&quot;#其他&quot; class=&quot;headerlink&quot; title=&quot;其他&quot;&gt;&lt;/a&gt;其他&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;自动链接&lt;br&gt;&lt;a href=&quot;http://www.cherishhsieh.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.cherishhsieh.com&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;&amp;#x6d;&amp;#x61;&amp;#x69;&amp;#x6c;&amp;#x74;&amp;#x6f;&amp;#58;&amp;#120;&amp;#x69;&amp;#x65;&amp;#113;&amp;#x69;&amp;#110;&amp;#x31;&amp;#x39;&amp;#x39;&amp;#x31;&amp;#x40;&amp;#x67;&amp;#x6d;&amp;#97;&amp;#x69;&amp;#108;&amp;#46;&amp;#99;&amp;#111;&amp;#x6d;&quot;&gt;&amp;#120;&amp;#x69;&amp;#x65;&amp;#113;&amp;#x69;&amp;#110;&amp;#x31;&amp;#x39;&amp;#x39;&amp;#x31;&amp;#x40;&amp;#x67;&amp;#x6d;&amp;#97;&amp;#x69;&amp;#108;&amp;#46;&amp;#99;&amp;#111;&amp;#x6d;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;反斜杠&lt;br&gt;*literal asterisks*&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;\   反斜线&lt;br&gt;`   反引号&lt;br&gt;*   星号&lt;br&gt;_   底线&lt;br&gt;{}  花括号&lt;br&gt;[]  方括号&lt;br&gt;()  括弧&lt;br&gt;#   井字号&lt;br&gt;+   加号&lt;br&gt;-   减号&lt;br&gt;.   英文句点&lt;br&gt;!   惊叹号&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
     
     <summary type="html">
+    
+      &lt;h2 id=&quot;特殊字符自动转换&quot;&gt;&lt;a href=&quot;#特殊字符自动转换&quot; class=&quot;headerlink&quot; title=&quot;特殊字符自动转换&quot;&gt;&lt;/a&gt;特殊字符自动转换&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;&amp;amp;字符&lt;br&gt;&amp;lt;字符&lt;/p&gt;
+&lt;/blockquot
     
     </summary>
     
     
+      <category term="Markdown" scheme="http://yoursite.com/tags/Markdown/"/>
+    
   </entry>
   
   <entry>
-    <title>&#39;Javascript面向对象编程&#39;</title>
+    <title>Javascript面向对象编程</title>
     <link href="http://yoursite.com/2016/05/23/Javascript%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/"/>
     <id>http://yoursite.com/2016/05/23/Javascript面向对象编程/</id>
     <published>2016-05-23T05:42:42.000Z</published>
-    <updated>2016-05-23T05:42:42.983Z</updated>
+    <updated>2016-05-23T05:46:04.690Z</updated>
     
     <content type="html"></content>
     
@@ -100,15 +147,13 @@
     <link href="http://yoursite.com/2016/05/10/Javascript-%E7%BB%A7%E6%89%BF/"/>
     <id>http://yoursite.com/2016/05/10/Javascript-继承/</id>
     <published>2016-05-10T08:50:46.000Z</published>
-    <updated>2016-05-23T05:43:52.697Z</updated>
+    <updated>2016-05-23T05:48:11.208Z</updated>
     
-    <content type="html">&lt;p&gt;#Javascript面向对象编程#&lt;/p&gt;
-</content>
+    <content type="html">&lt;h1 id=&quot;Javascript继承&quot;&gt;&lt;a href=&quot;#Javascript继承&quot; class=&quot;headerlink&quot; title=&quot;Javascript继承&quot;&gt;&lt;/a&gt;Javascript继承&lt;/h1&gt;</content>
     
     <summary type="html">
     
-      &lt;p&gt;#Javascript面向对象编程#&lt;/p&gt;
-
+      &lt;h1 id=&quot;Javascript继承&quot;&gt;&lt;a href=&quot;#Javascript继承&quot; class=&quot;headerlink&quot; title=&quot;Javascript继承&quot;&gt;&lt;/a&gt;Javascript继承&lt;/h1&gt;
     
     </summary>
     
