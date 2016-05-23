@@ -45,7 +45,7 @@
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&quot;区段元素&quot;&gt;&lt;a href=&quot;#区段元素&quot; class=&quot;headerlink&quot; title=&quot;区段元素&quot;&gt;&lt;/a&gt;区段元素&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;链接&lt;br&gt;这是&lt;a href=&quot;http://www.cherishhsieh.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;我的blog&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;链接&lt;br&gt;这是&lt;a href=&quot;http://www.cherishhsieh.com&quot;&gt;我的blog&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;强调&lt;br&gt;&lt;strong&gt;文本区域&lt;/strong&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -55,7 +55,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;其他&quot;&gt;&lt;a href=&quot;#其他&quot; class=&quot;headerlink&quot; title=&quot;其他&quot;&gt;&lt;/a&gt;其他&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;自动链接&lt;br&gt;&lt;a href=&quot;http://www.cherishhsieh.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.cherishhsieh.com&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;&amp;#x6d;&amp;#97;&amp;#x69;&amp;#108;&amp;#116;&amp;#x6f;&amp;#x3a;&amp;#x78;&amp;#105;&amp;#x65;&amp;#113;&amp;#x69;&amp;#x6e;&amp;#x31;&amp;#x39;&amp;#x39;&amp;#49;&amp;#64;&amp;#103;&amp;#x6d;&amp;#x61;&amp;#x69;&amp;#108;&amp;#46;&amp;#99;&amp;#111;&amp;#x6d;&quot;&gt;&amp;#x78;&amp;#105;&amp;#x65;&amp;#113;&amp;#x69;&amp;#x6e;&amp;#x31;&amp;#x39;&amp;#x39;&amp;#49;&amp;#64;&amp;#103;&amp;#x6d;&amp;#x61;&amp;#x69;&amp;#108;&amp;#46;&amp;#99;&amp;#111;&amp;#x6d;&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;自动链接&lt;br&gt;&lt;a href=&quot;http://www.cherishhsieh.com&quot;&gt;http://www.cherishhsieh.com&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;&amp;#109;&amp;#97;&amp;#x69;&amp;#x6c;&amp;#116;&amp;#x6f;&amp;#58;&amp;#120;&amp;#105;&amp;#x65;&amp;#113;&amp;#105;&amp;#x6e;&amp;#x31;&amp;#x39;&amp;#57;&amp;#x31;&amp;#x40;&amp;#103;&amp;#x6d;&amp;#97;&amp;#105;&amp;#x6c;&amp;#x2e;&amp;#x63;&amp;#111;&amp;#x6d;&quot;&gt;&amp;#120;&amp;#105;&amp;#x65;&amp;#113;&amp;#105;&amp;#x6e;&amp;#x31;&amp;#x39;&amp;#57;&amp;#x31;&amp;#x40;&amp;#103;&amp;#x6d;&amp;#97;&amp;#105;&amp;#x6c;&amp;#x2e;&amp;#x63;&amp;#111;&amp;#x6d;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;反斜杠&lt;br&gt;*literal asterisks*&lt;/p&gt;
 &lt;blockquote&gt;
