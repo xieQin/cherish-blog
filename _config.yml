@@ -44,7 +44,7 @@ highlight:
   tab_replace:
 
 # Category & Tag
-default_category: uncategorized
+default_category: Hexo
 category_map:
 tag_map:
 
@@ -69,3 +69,6 @@ theme: hacker
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+duoshuo: true
+duoshuo_name: 7956404
