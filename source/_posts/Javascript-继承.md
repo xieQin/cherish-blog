@@ -4,6 +4,6 @@ date: 2016-05-10 16:50:46
 tags: Javascript
 ---
 
-#Javascript面向对象编程#
+# Javascript继承
 
 
