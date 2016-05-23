@@ -2,6 +2,7 @@
 title: Markdown语法总结
 date: 2016-05-23 13:45:12
 tags: Markdown
+categories: Markdown
 ---
 
 ## 特殊字符自动转换
