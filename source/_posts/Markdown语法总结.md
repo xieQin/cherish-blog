@@ -37,6 +37,17 @@ This is an H2
 ## 区段元素
 
 - 链接
+这是[我的blog](http://www.cherishhsieh.com)
 
-这是[我的blog]
+- 强调
+**文本区域**
 
+- 代码
+Use the `printf()` function
+
+- 图片
+![Alt text](https://avatars2.githubusercontent.com/u/6762420?v=3&s=460)
+
+## 其他
+
+- 自动链接
