@@ -51,3 +51,20 @@ Use the `printf()` function
 ## 其他
 
 - 自动链接
+<http://www.cherishhsieh.com>
+<xieqin1991@gmail.com>
+
+- 反斜杠
+\*literal asterisks\*
+>\   反斜线
+>`   反引号
+>\*   星号
+>_   底线
+>{}  花括号
+>[]  方括号
+>()  括弧
+>\#   井字号
+>\+   加号
+>\-   减号
+>.   英文句点
+>!   惊叹号
