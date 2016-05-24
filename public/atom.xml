@@ -55,7 +55,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;其他&quot;&gt;&lt;a href=&quot;#其他&quot; class=&quot;headerlink&quot; title=&quot;其他&quot;&gt;&lt;/a&gt;其他&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;自动链接&lt;br&gt;&lt;a href=&quot;http://www.cherishhsieh.com&quot;&gt;http://www.cherishhsieh.com&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;&amp;#109;&amp;#97;&amp;#x69;&amp;#x6c;&amp;#116;&amp;#x6f;&amp;#58;&amp;#120;&amp;#105;&amp;#x65;&amp;#113;&amp;#105;&amp;#x6e;&amp;#x31;&amp;#x39;&amp;#57;&amp;#x31;&amp;#x40;&amp;#103;&amp;#x6d;&amp;#97;&amp;#105;&amp;#x6c;&amp;#x2e;&amp;#x63;&amp;#111;&amp;#x6d;&quot;&gt;&amp;#120;&amp;#105;&amp;#x65;&amp;#113;&amp;#105;&amp;#x6e;&amp;#x31;&amp;#x39;&amp;#57;&amp;#x31;&amp;#x40;&amp;#103;&amp;#x6d;&amp;#97;&amp;#105;&amp;#x6c;&amp;#x2e;&amp;#x63;&amp;#111;&amp;#x6d;&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;自动链接&lt;br&gt;&lt;a href=&quot;http://www.cherishhsieh.com&quot;&gt;http://www.cherishhsieh.com&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;&amp;#109;&amp;#x61;&amp;#x69;&amp;#x6c;&amp;#x74;&amp;#111;&amp;#58;&amp;#120;&amp;#x69;&amp;#101;&amp;#x71;&amp;#105;&amp;#110;&amp;#x31;&amp;#x39;&amp;#57;&amp;#49;&amp;#64;&amp;#x67;&amp;#x6d;&amp;#97;&amp;#x69;&amp;#108;&amp;#x2e;&amp;#99;&amp;#111;&amp;#x6d;&quot;&gt;&amp;#120;&amp;#x69;&amp;#101;&amp;#x71;&amp;#105;&amp;#110;&amp;#x31;&amp;#x39;&amp;#57;&amp;#49;&amp;#64;&amp;#x67;&amp;#x6d;&amp;#97;&amp;#x69;&amp;#108;&amp;#x2e;&amp;#99;&amp;#111;&amp;#x6d;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;反斜杠&lt;br&gt;*literal asterisks*&lt;/p&gt;
 &lt;blockquote&gt;
@@ -85,11 +85,19 @@
     <link href="http://www.cherishhsieh.com/2016/05/23/Javascript%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/"/>
     <id>http://www.cherishhsieh.com/2016/05/23/Javascript面向对象编程/</id>
     <published>2016-05-23T05:42:42.000Z</published>
-    <updated>2016-05-23T06:56:04.864Z</updated>
+    <updated>2016-05-24T10:06:54.842Z</updated>
     
-    <content type="html"></content>
+    <content type="html">&lt;p&gt;ECMA-262把对象定义为：”无序属性的集合，其属性可以包含基本值、对象或者函数。”&lt;/p&gt;
+&lt;h2 id=&quot;对象&quot;&gt;&lt;a href=&quot;#对象&quot; class=&quot;headerlink&quot; title=&quot;对象&quot;&gt;&lt;/a&gt;对象&lt;/h2&gt;&lt;h3 id=&quot;属性类型&quot;&gt;&lt;a href=&quot;#属性类型&quot; class=&quot;headerlink&quot; title=&quot;属性类型&quot;&gt;&lt;/a&gt;属性类型&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;数据属性&lt;/li&gt;
+&lt;li&gt;访问器属性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;定义多个属性&quot;&gt;&lt;a href=&quot;#定义多个属性&quot; class=&quot;headerlink&quot; title=&quot;定义多个属性&quot;&gt;&lt;/a&gt;定义多个属性&lt;/h5&gt;&lt;h5 id=&quot;读取属性的特性&quot;&gt;&lt;a href=&quot;#读取属性的特性&quot; class=&quot;headerlink&quot; title=&quot;读取属性的特性&quot;&gt;&lt;/a&gt;读取属性的特性&lt;/h5&gt;&lt;h3 id=&quot;创建对象&quot;&gt;&lt;a href=&quot;#创建对象&quot; class=&quot;headerlink&quot; title=&quot;创建对象&quot;&gt;&lt;/a&gt;创建对象&lt;/h3&gt;&lt;h5 id=&quot;工厂模式&quot;&gt;&lt;a href=&quot;#工厂模式&quot; class=&quot;headerlink&quot; title=&quot;工厂模式&quot;&gt;&lt;/a&gt;工厂模式&lt;/h5&gt;&lt;h5 id=&quot;原型模式&quot;&gt;&lt;a href=&quot;#原型模式&quot; class=&quot;headerlink&quot; title=&quot;原型模式&quot;&gt;&lt;/a&gt;原型模式&lt;/h5&gt;</content>
     
     <summary type="html">
+    
+      &lt;p&gt;ECMA-262把对象定义为：”无序属性的集合，其属性可以包含基本值、对象或者函数。”&lt;/p&gt;
+&lt;h2 id=&quot;对象&quot;&gt;&lt;a href=&quot;#对象&quot; class=&quot;headerlink&quot; title=&quot;对象&quot;&gt;&lt;/a&gt;对象&lt;/h2&gt;&lt;h3 id=&quot;属性类型&quot;&gt;&lt;a href=
     
     </summary>
     
