@@ -6,10 +6,12 @@ categories: Markdown
 ---
 
 ## 特殊字符自动转换
+------------------------
 > &字符
 > <字符
 
 ## 区块元素
+------------------------
 
 - 段落和换行
 
@@ -36,6 +38,7 @@ This is an H2
 -----
 
 ## 区段元素
+------------------------
 
 - 链接
 这是[我的blog](http://www.cherishhsieh.com)
@@ -50,6 +53,7 @@ Use the `printf()` function
 ![Alt text](https://avatars2.githubusercontent.com/u/6762420?v=3&s=460)
 
 ## 其他
+------------------------
 
 - 自动链接
 <http://www.cherishhsieh.com>
