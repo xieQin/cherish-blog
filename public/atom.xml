@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.cherishhsieh.com/"/>
-  <updated>2016-05-23T06:55:44.102Z</updated>
+  <updated>2016-05-25T11:10:07.933Z</updated>
   <id>http://www.cherishhsieh.com/</id>
   
   <author>
@@ -16,23 +16,50 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>点击事件绑定</title>
+    <link href="http://www.cherishhsieh.com/2016/05/25/%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6%E7%BB%91%E5%AE%9A/"/>
+    <id>http://www.cherishhsieh.com/2016/05/25/点击事件绑定/</id>
+    <published>2016-05-25T10:59:53.000Z</published>
+    <updated>2016-05-25T11:10:07.933Z</updated>
+    
+    <content type="html">&lt;p&gt;网页界面中与用户的交互通常是通过各种事件来达成的；&lt;br&gt;在各种事件之中，点击事件 往往是最常见、最通用的一种界面事件&lt;/p&gt;
+&lt;h2 id=&quot;点击事件&quot;&gt;&lt;a href=&quot;#点击事件&quot; class=&quot;headerlink&quot; title=&quot;点击事件&quot;&gt;&lt;/a&gt;点击事件&lt;/h2&gt;&lt;hr&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var actionList = &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;string&quot;&gt;&#39;action1&#39;&lt;/span&gt;: &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt; () &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    func1 ()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;string&quot;&gt;&#39;action2&#39;&lt;/span&gt;: &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt; () &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    func2 ()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  ...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$body&lt;/span&gt;.on(&lt;span class=&quot;string&quot;&gt;&#39;click&#39;&lt;/span&gt;, [&lt;span class=&quot;string&quot;&gt;&#39;data-action&#39;&lt;/span&gt;], &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt; () &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  var actionName = $(this).data(&lt;span class=&quot;string&quot;&gt;&#39;action&#39;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  var action = actionList[actionName]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; ($.isFunction(action)) action()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$.extend(actionList, &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;string&quot;&gt;&#39;more-action&#39;&lt;/span&gt;: &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt; () &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    // ...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;网页界面中与用户的交互通常是通过各种事件来达成的；&lt;br&gt;在各种事件之中，点击事件 往往是最常见、最通用的一种界面事件&lt;/p&gt;
+&lt;h2 id=&quot;点击事件&quot;&gt;&lt;a href=&quot;#点击事件&quot; class=&quot;headerlink&quot; title=&quot;点击事件&quot;&gt;&lt;/a&gt;点击事件&lt;/h
+    
+    </summary>
+    
+      <category term="前端" scheme="http://www.cherishhsieh.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="Jquery" scheme="http://www.cherishhsieh.com/tags/Jquery/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Markdown语法总结</title>
     <link href="http://www.cherishhsieh.com/2016/05/23/Markdown%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/"/>
     <id>http://www.cherishhsieh.com/2016/05/23/Markdown语法总结/</id>
     <published>2016-05-23T05:45:12.000Z</published>
-    <updated>2016-05-23T06:55:44.102Z</updated>
+    <updated>2016-05-25T11:13:40.845Z</updated>
     
-    <content type="html">&lt;h2 id=&quot;特殊字符自动转换&quot;&gt;&lt;a href=&quot;#特殊字符自动转换&quot; class=&quot;headerlink&quot; title=&quot;特殊字符自动转换&quot;&gt;&lt;/a&gt;特殊字符自动转换&lt;/h2&gt;&lt;blockquote&gt;
+    <content type="html">&lt;h2 id=&quot;特殊字符自动转换&quot;&gt;&lt;a href=&quot;#特殊字符自动转换&quot; class=&quot;headerlink&quot; title=&quot;特殊字符自动转换&quot;&gt;&lt;/a&gt;特殊字符自动转换&lt;/h2&gt;&lt;hr&gt;
+&lt;blockquote&gt;
 &lt;p&gt;&amp;amp;字符&lt;br&gt;&amp;lt;字符&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&quot;区块元素&quot;&gt;&lt;a href=&quot;#区块元素&quot; class=&quot;headerlink&quot; title=&quot;区块元素&quot;&gt;&lt;/a&gt;区块元素&lt;/h2&gt;&lt;ul&gt;
+&lt;h2 id=&quot;区块元素&quot;&gt;&lt;a href=&quot;#区块元素&quot; class=&quot;headerlink&quot; title=&quot;区块元素&quot;&gt;&lt;/a&gt;区块元素&lt;/h2&gt;&lt;hr&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;段落和换行&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;标题&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;类Setext形式&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;This is an H1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;=============&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;This is an H2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;-------------&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;类Setext形式&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;This is an H1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;=============&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;This is an H2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;=============&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;类Atx形式&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 这是H1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;## 这是H2&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
@@ -43,8 +70,8 @@
 &lt;li&gt;&lt;p&gt;分割线&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;区段元素&quot;&gt;&lt;a href=&quot;#区段元素&quot; class=&quot;headerlink&quot; title=&quot;区段元素&quot;&gt;&lt;/a&gt;区段元素&lt;/h2&gt;&lt;ul&gt;
+&lt;h2 id=&quot;区段元素&quot;&gt;&lt;a href=&quot;#区段元素&quot; class=&quot;headerlink&quot; title=&quot;区段元素&quot;&gt;&lt;/a&gt;区段元素&lt;/h2&gt;&lt;hr&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;链接&lt;br&gt;这是&lt;a href=&quot;http://www.cherishhsieh.com&quot;&gt;我的blog&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;强调&lt;br&gt;&lt;strong&gt;文本区域&lt;/strong&gt;&lt;/p&gt;
@@ -54,8 +81,9 @@
 &lt;li&gt;&lt;p&gt;图片&lt;br&gt;&lt;img src=&quot;https://avatars2.githubusercontent.com/u/6762420?v=3&amp;amp;s=460&quot; alt=&quot;Alt text&quot;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;其他&quot;&gt;&lt;a href=&quot;#其他&quot; class=&quot;headerlink&quot; title=&quot;其他&quot;&gt;&lt;/a&gt;其他&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;自动链接&lt;br&gt;&lt;a href=&quot;http://www.cherishhsieh.com&quot;&gt;http://www.cherishhsieh.com&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;&amp;#109;&amp;#x61;&amp;#x69;&amp;#x6c;&amp;#x74;&amp;#111;&amp;#58;&amp;#120;&amp;#x69;&amp;#101;&amp;#x71;&amp;#105;&amp;#110;&amp;#x31;&amp;#x39;&amp;#57;&amp;#49;&amp;#64;&amp;#x67;&amp;#x6d;&amp;#97;&amp;#x69;&amp;#108;&amp;#x2e;&amp;#99;&amp;#111;&amp;#x6d;&quot;&gt;&amp;#120;&amp;#x69;&amp;#101;&amp;#x71;&amp;#105;&amp;#110;&amp;#x31;&amp;#x39;&amp;#57;&amp;#49;&amp;#64;&amp;#x67;&amp;#x6d;&amp;#97;&amp;#x69;&amp;#108;&amp;#x2e;&amp;#99;&amp;#111;&amp;#x6d;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;其他&quot;&gt;&lt;a href=&quot;#其他&quot; class=&quot;headerlink&quot; title=&quot;其他&quot;&gt;&lt;/a&gt;其他&lt;/h2&gt;&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;自动链接&lt;br&gt;&lt;a href=&quot;http://www.cherishhsieh.com&quot;&gt;http://www.cherishhsieh.com&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;&amp;#x6d;&amp;#97;&amp;#105;&amp;#x6c;&amp;#116;&amp;#111;&amp;#x3a;&amp;#120;&amp;#x69;&amp;#x65;&amp;#113;&amp;#x69;&amp;#x6e;&amp;#49;&amp;#x39;&amp;#x39;&amp;#49;&amp;#64;&amp;#x67;&amp;#x6d;&amp;#97;&amp;#105;&amp;#108;&amp;#x2e;&amp;#x63;&amp;#x6f;&amp;#109;&quot;&gt;&amp;#120;&amp;#x69;&amp;#x65;&amp;#113;&amp;#x69;&amp;#x6e;&amp;#49;&amp;#x39;&amp;#x39;&amp;#49;&amp;#64;&amp;#x67;&amp;#x6d;&amp;#97;&amp;#105;&amp;#108;&amp;#x2e;&amp;#x63;&amp;#x6f;&amp;#109;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;反斜杠&lt;br&gt;*literal asterisks*&lt;/p&gt;
 &lt;blockquote&gt;
@@ -67,9 +95,10 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;特殊字符自动转换&quot;&gt;&lt;a href=&quot;#特殊字符自动转换&quot; class=&quot;headerlink&quot; title=&quot;特殊字符自动转换&quot;&gt;&lt;/a&gt;特殊字符自动转换&lt;/h2&gt;&lt;blockquote&gt;
+      &lt;h2 id=&quot;特殊字符自动转换&quot;&gt;&lt;a href=&quot;#特殊字符自动转换&quot; class=&quot;headerlink&quot; title=&quot;特殊字符自动转换&quot;&gt;&lt;/a&gt;特殊字符自动转换&lt;/h2&gt;&lt;hr&gt;
+&lt;blockquote&gt;
 &lt;p&gt;&amp;amp;字符&lt;br&gt;&amp;lt;字符&lt;/p&gt;
-&lt;/blockquot
+&lt;/bloc
     
     </summary>
     
@@ -85,7 +114,7 @@
     <link href="http://www.cherishhsieh.com/2016/05/23/Javascript%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/"/>
     <id>http://www.cherishhsieh.com/2016/05/23/Javascript面向对象编程/</id>
     <published>2016-05-23T05:42:42.000Z</published>
-    <updated>2016-05-24T10:06:54.842Z</updated>
+    <updated>2016-05-24T10:07:55.042Z</updated>
     
     <content type="html">&lt;p&gt;ECMA-262把对象定义为：”无序属性的集合，其属性可以包含基本值、对象或者函数。”&lt;/p&gt;
 &lt;h2 id=&quot;对象&quot;&gt;&lt;a href=&quot;#对象&quot; class=&quot;headerlink&quot; title=&quot;对象&quot;&gt;&lt;/a&gt;对象&lt;/h2&gt;&lt;h3 id=&quot;属性类型&quot;&gt;&lt;a href=&quot;#属性类型&quot; class=&quot;headerlink&quot; title=&quot;属性类型&quot;&gt;&lt;/a&gt;属性类型&lt;/h3&gt;&lt;ul&gt;
