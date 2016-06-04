@@ -3,8 +3,16 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Cherish | 一个真实的现在可以开垦一万个美丽的未来</title>
+  <title>Touch手势 | Cherish | 一个真实的现在可以开垦一万个美丽的未来</title>
   <meta name="author" content="xieQin">
+  
+  <meta name="description" content="常见问题
+
+带延迟的事件分发机制：鼠标事件
+Mousemove无法追踪
+
+
+点击延迟123456789101112131415161718192021222324252627282930313233var startX,    startY,    tap;function getCoord(e, ">
   
   
 
@@ -12,7 +20,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-  
+  <meta property="og:title" content="Touch手势"/>
   <meta property="og:site_name" content="Cherish"/>
 
   
@@ -51,12 +59,11 @@
 
     <article id="content" class="site-content">
       <main id="main" class="site-main posts-loop" role="main">
-        
-  <article class="post article">
+        <article class="post article">
 
   
   
-    <h3 class="article-title"><a href="/2016/06/04/Touch手势/"><span>Touch手势</span></a></h3>
+    <h3 class="article-title"><span>Touch手势</span></h3>
   
 
 
@@ -119,335 +126,34 @@
           </span>
         </div>
         
-
-        <div class="article-meta pull-right">
-          <span>
-            <i class="icon-comments"></i>
-            <span>
-              <a href="http://www.cherishhsieh.com/2016/06/04/Touch手势/#comment">评论</a>
-            </span>
-          </span>
-        </div>
-        
     </footer>
   </div>
 </article>
 
-
-  <article class="post article">
-
   
-  
-    <h3 class="article-title"><a href="/2016/05/25/点击事件绑定/"><span>点击事件绑定</span></a></h3>
-  
+<div id="comment">
 
 
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2016/05/25/点击事件绑定/" rel="bookmark">
-        <time class="entry-date published" datetime="2016-05-25T10:59:53.000Z">
-          2016-05-25
-        </time>
-      </a>
-    </span>
-  </div>
+<!-- 多说评论框 start -->
+ <div class="ds-thread" data-thread-key="/2016/06/04/Touch手势/" data-title="Touch手势" data-url="http://www.cherishhsieh.com/2016/06/04/Touch手势/"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"cherishhsieh"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+<!-- 多说公共JS代码 end -->
+
+</div>
 
 
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        <p>网页界面中与用户的交互通常是通过各种事件来达成的；<br>在各种事件之中，点击事件 往往是最常见、最通用的一种界面事件</p>
-<h2 id="点击事件"><a href="#点击事件" class="headerlink" title="点击事件"></a>点击事件</h2><hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">var actionList = &#123;</span><br><span class="line">  <span class="string">'action1'</span>: <span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">    func1 ()</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="string">'action2'</span>: <span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">    func2 ()</span><br><span class="line">  &#125;,</span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable">$body</span>.on(<span class="string">'click'</span>, [<span class="string">'data-action'</span>], <span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">  var actionName = $(this).data(<span class="string">'action'</span>)</span><br><span class="line">  var action = actionList[actionName]</span><br><span class="line">  <span class="keyword">if</span> ($.isFunction(action)) action()</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">$.extend(actionList, &#123;</span><br><span class="line">  <span class="string">'more-action'</span>: <span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">    // ...</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-        <div class="article-meta pull-left">
-          <span class="post-categories">
-            <i class="icon-categories"></i>
-            
-  
-
-  <a href="/categories/前端/">前端</a>
-
-
-          </span>
-          <span class="post-tags">
-            <i class="icon-tags"></i>
-            
-  
-
-  <a href="/tags/Jquery/">Jquery</a>
-
-
-          </span>
-        </div>
-        
-
-        <div class="article-meta pull-right">
-          <span>
-            <i class="icon-comments"></i>
-            <span>
-              <a href="http://www.cherishhsieh.com/2016/05/25/点击事件绑定/#comment">评论</a>
-            </span>
-          </span>
-        </div>
-        
-    </footer>
-  </div>
-</article>
-
-
-  <article class="post article">
-
-  
-  
-    <h3 class="article-title"><a href="/2016/05/23/Markdown语法总结/"><span>Markdown语法总结</span></a></h3>
-  
-
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2016/05/23/Markdown语法总结/" rel="bookmark">
-        <time class="entry-date published" datetime="2016-05-23T05:45:12.000Z">
-          2016-05-23
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        <h2 id="特殊字符自动转换"><a href="#特殊字符自动转换" class="headerlink" title="特殊字符自动转换"></a>特殊字符自动转换</h2><hr>
-<blockquote>
-<p>&amp;字符<br>&lt;字符</p>
-</blockquote>
-<h2 id="区块元素"><a href="#区块元素" class="headerlink" title="区块元素"></a>区块元素</h2><hr>
-<ul>
-<li><p>段落和换行</p>
-</li>
-<li><p>标题</p>
-</li>
-</ul>
-<blockquote>
-<p>类Setext形式<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">This is an H1</span><br><span class="line">=============</span><br><span class="line">This is an H2</span><br><span class="line">=============</span><br></pre></td></tr></table></figure></p>
-<p>类Atx形式<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 这是H1</span></span><br><span class="line"><span class="comment">## 这是H2</span></span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<ul>
-<li><p>区块引用</p>
-</li>
-<li><p>代码区块</p>
-</li>
-<li><p>分割线</p>
-</li>
-</ul>
-<h2 id="区段元素"><a href="#区段元素" class="headerlink" title="区段元素"></a>区段元素</h2><hr>
-<ul>
-<li><p>链接<br>这是<a href="http://www.cherishhsieh.com">我的blog</a></p>
-</li>
-<li><p>强调<br><strong>文本区域</strong></p>
-</li>
-<li><p>代码<br>Use the <code>printf()</code> function</p>
-</li>
-<li><p>图片<br><img src="https://avatars2.githubusercontent.com/u/6762420?v=3&amp;s=460" alt="Alt text"></p>
-</li>
-</ul>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><hr>
-<ul>
-<li><p>自动链接<br><a href="http://www.cherishhsieh.com">http://www.cherishhsieh.com</a><br><a href="&#109;&#97;&#105;&#108;&#116;&#x6f;&#58;&#x78;&#x69;&#101;&#x71;&#105;&#x6e;&#49;&#57;&#x39;&#49;&#64;&#x67;&#109;&#x61;&#105;&#108;&#46;&#x63;&#111;&#x6d;">&#x78;&#x69;&#101;&#x71;&#105;&#x6e;&#49;&#57;&#x39;&#49;&#64;&#x67;&#109;&#x61;&#105;&#108;&#46;&#x63;&#111;&#x6d;</a></p>
-</li>
-<li><p>反斜杠<br>*literal asterisks*</p>
-<blockquote>
-<p>\   反斜线<br>`   反引号<br>*   星号<br>_   底线<br>{}  花括号<br>[]  方括号<br>()  括弧<br>#   井字号<br>+   加号<br>-   减号<br>.   英文句点<br>!   惊叹号</p>
-</blockquote>
-</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-        <div class="article-meta pull-left">
-          <span class="post-categories">
-            <i class="icon-categories"></i>
-            
-  
-
-  <a href="/categories/Markdown/">Markdown</a>
-
-
-          </span>
-          <span class="post-tags">
-            <i class="icon-tags"></i>
-            
-  
-
-  <a href="/tags/Markdown/">Markdown</a>
-
-
-          </span>
-        </div>
-        
-
-        <div class="article-meta pull-right">
-          <span>
-            <i class="icon-comments"></i>
-            <span>
-              <a href="http://www.cherishhsieh.com/2016/05/23/Markdown语法总结/#comment">评论</a>
-            </span>
-          </span>
-        </div>
-        
-    </footer>
-  </div>
-</article>
-
-
-  <article class="post article">
-
-  
-  
-    <h3 class="article-title"><a href="/2016/05/23/Javascript面向对象编程/"><span>Javascript面向对象编程</span></a></h3>
-  
-
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2016/05/23/Javascript面向对象编程/" rel="bookmark">
-        <time class="entry-date published" datetime="2016-05-23T05:42:42.000Z">
-          2016-05-23
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        <p>ECMA-262把对象定义为：”无序属性的集合，其属性可以包含基本值、对象或者函数。”</p>
-<h2 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h2><h3 id="属性类型"><a href="#属性类型" class="headerlink" title="属性类型"></a>属性类型</h3><ul>
-<li>数据属性</li>
-<li>访问器属性</li>
-</ul>
-<h5 id="定义多个属性"><a href="#定义多个属性" class="headerlink" title="定义多个属性"></a>定义多个属性</h5><h5 id="读取属性的特性"><a href="#读取属性的特性" class="headerlink" title="读取属性的特性"></a>读取属性的特性</h5><h3 id="创建对象"><a href="#创建对象" class="headerlink" title="创建对象"></a>创建对象</h3><h5 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h5><h5 id="原型模式"><a href="#原型模式" class="headerlink" title="原型模式"></a>原型模式</h5><h5 id="组合使用构造函数模式和原型模式"><a href="#组合使用构造函数模式和原型模式" class="headerlink" title="组合使用构造函数模式和原型模式"></a>组合使用构造函数模式和原型模式</h5><h5 id="动态原型模式"><a href="#动态原型模式" class="headerlink" title="动态原型模式"></a>动态原型模式</h5><h5 id="寄生构造函数模式"><a href="#寄生构造函数模式" class="headerlink" title="寄生构造函数模式"></a>寄生构造函数模式</h5><h5 id="稳妥构造函数模式"><a href="#稳妥构造函数模式" class="headerlink" title="稳妥构造函数模式"></a>稳妥构造函数模式</h5><h3 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h3>
-      
-    </div>
-    <footer class="article-footer">
-        <div class="article-meta pull-left">
-          <span class="post-categories">
-            <i class="icon-categories"></i>
-            
-  
-
-  <a href="/categories/编程/">编程</a>
-
-
-          </span>
-          <span class="post-tags">
-            <i class="icon-tags"></i>
-            
-  
-
-  <a href="/tags/Javascript/">Javascript</a>
-
-
-          </span>
-        </div>
-        
-
-        <div class="article-meta pull-right">
-          <span>
-            <i class="icon-comments"></i>
-            <span>
-              <a href="http://www.cherishhsieh.com/2016/05/23/Javascript面向对象编程/#comment">评论</a>
-            </span>
-          </span>
-        </div>
-        
-    </footer>
-  </div>
-</article>
-
-
-  <article class="post article">
-
-  
-  
-    <h3 class="article-title"><a href="/2016/05/14/Weui使用/"><span>Weui使用</span></a></h3>
-  
-
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2016/05/14/Weui使用/" rel="bookmark">
-        <time class="entry-date published" datetime="2016-05-14T08:49:13.000Z">
-          2016-05-14
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-        <div class="article-meta pull-left">
-          <span class="post-categories">
-            <i class="icon-categories"></i>
-            
-  
-
-  <a href="/categories/前端/">前端</a>
-
-
-          </span>
-          <span class="post-tags">
-            <i class="icon-tags"></i>
-            
-  
-
-  <a href="/tags/Css-Html/">Css Html</a>
-
-
-          </span>
-        </div>
-        
-
-        <div class="article-meta pull-right">
-          <span>
-            <i class="icon-comments"></i>
-            <span>
-              <a href="http://www.cherishhsieh.com/2016/05/14/Weui使用/#comment">评论</a>
-            </span>
-          </span>
-        </div>
-        
-    </footer>
-  </div>
-</article>
-
-
-
-<nav class="pagination">
-  
-  
-  <a href="/page/2/" class="pagination-next">下一页</a>
-  
-</nav>
       </main>
     </article>
 
