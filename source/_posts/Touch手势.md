@@ -10,7 +10,7 @@ categories: 前端
 >- Mousemove无法追踪
 
 ## 点击延迟
-```bash
+```js
 var startX,
     startY,
     tap;
@@ -55,7 +55,7 @@ element.on('touchstart', function (ev) {
 >- Pinch and Stretch
 >- Turn
 
-```bash
+```js
 var touch,
     action,
     diffX,
