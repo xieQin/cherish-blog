@@ -49,3 +49,4 @@ Temporary Items
 node_modules/
 themes/
 npm-debug.log
+.deploy_git/

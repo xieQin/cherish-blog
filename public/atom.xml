@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.cherishhsieh.com/"/>
-  <updated>2016-06-27T06:51:26.610Z</updated>
+  <updated>2016-06-27T09:24:54.028Z</updated>
   <id>http://www.cherishhsieh.com/</id>
   
   <author>
@@ -14,6 +14,22 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>防止重复发送ajax的方法</title>
+    <link href="http://www.cherishhsieh.com/2016/06/27/%E9%98%B2%E6%AD%A2%E9%87%8D%E5%A4%8D%E5%8F%91%E9%80%81ajax%E7%9A%84%E6%96%B9%E6%B3%95/"/>
+    <id>http://www.cherishhsieh.com/2016/06/27/防止重复发送ajax的方法/</id>
+    <published>2016-06-27T09:24:54.000Z</published>
+    <updated>2016-06-27T09:24:54.028Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>express与koa</title>
@@ -465,7 +481,7 @@
 &lt;/ul&gt;
 &lt;h2 id=&quot;其他&quot;&gt;&lt;a href=&quot;#其他&quot; class=&quot;headerlink&quot; title=&quot;其他&quot;&gt;&lt;/a&gt;其他&lt;/h2&gt;&lt;hr&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;自动链接&lt;br&gt;&lt;a href=&quot;http://www.cherishhsieh.com&quot;&gt;http://www.cherishhsieh.com&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;&amp;#x6d;&amp;#x61;&amp;#105;&amp;#x6c;&amp;#116;&amp;#x6f;&amp;#58;&amp;#x78;&amp;#105;&amp;#x65;&amp;#113;&amp;#105;&amp;#x6e;&amp;#x31;&amp;#x39;&amp;#x39;&amp;#x31;&amp;#x40;&amp;#x67;&amp;#x6d;&amp;#97;&amp;#105;&amp;#x6c;&amp;#x2e;&amp;#99;&amp;#111;&amp;#x6d;&quot;&gt;&amp;#x78;&amp;#105;&amp;#x65;&amp;#113;&amp;#105;&amp;#x6e;&amp;#x31;&amp;#x39;&amp;#x39;&amp;#x31;&amp;#x40;&amp;#x67;&amp;#x6d;&amp;#97;&amp;#105;&amp;#x6c;&amp;#x2e;&amp;#99;&amp;#111;&amp;#x6d;&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;自动链接&lt;br&gt;&lt;a href=&quot;http://www.cherishhsieh.com&quot;&gt;http://www.cherishhsieh.com&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;&amp;#109;&amp;#97;&amp;#105;&amp;#x6c;&amp;#x74;&amp;#111;&amp;#58;&amp;#120;&amp;#105;&amp;#x65;&amp;#x71;&amp;#105;&amp;#110;&amp;#x31;&amp;#x39;&amp;#x39;&amp;#x31;&amp;#x40;&amp;#x67;&amp;#109;&amp;#x61;&amp;#105;&amp;#x6c;&amp;#46;&amp;#x63;&amp;#111;&amp;#x6d;&quot;&gt;&amp;#120;&amp;#105;&amp;#x65;&amp;#x71;&amp;#105;&amp;#110;&amp;#x31;&amp;#x39;&amp;#x39;&amp;#x31;&amp;#x40;&amp;#x67;&amp;#109;&amp;#x61;&amp;#105;&amp;#x6c;&amp;#46;&amp;#x63;&amp;#111;&amp;#x6d;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;反斜杠&lt;br&gt;*literal asterisks*&lt;/p&gt;
 &lt;blockquote&gt;
@@ -556,26 +572,6 @@
     
     
       <category term="Javascript" scheme="http://www.cherishhsieh.com/tags/Javascript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>datatables 使用</title>
-    <link href="http://www.cherishhsieh.com/2016/05/12/datatables-%E4%BD%BF%E7%94%A8/"/>
-    <id>http://www.cherishhsieh.com/2016/05/12/datatables-使用/</id>
-    <published>2016-05-12T10:29:56.000Z</published>
-    <updated>2016-05-23T06:57:14.493Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="插件" scheme="http://www.cherishhsieh.com/categories/%E6%8F%92%E4%BB%B6/"/>
-    
-    
-      <category term="Jquery" scheme="http://www.cherishhsieh.com/tags/Jquery/"/>
     
   </entry>
   
