@@ -1,6 +1,6 @@
 ---
 title: Touch手势
-date: 2016-06-04 11:18:54
+date: 2015-07-04 11:18:54
 tags: Javascript
 categories: 前端
 ---
