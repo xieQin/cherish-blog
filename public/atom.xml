@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.cherishhsieh.com/"/>
-  <updated>2016-06-27T09:24:54.028Z</updated>
+  <updated>2016-06-30T08:53:34.695Z</updated>
   <id>http://www.cherishhsieh.com/</id>
   
   <author>
@@ -16,186 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>防止重复发送ajax的方法</title>
-    <link href="http://www.cherishhsieh.com/2016/06/27/%E9%98%B2%E6%AD%A2%E9%87%8D%E5%A4%8D%E5%8F%91%E9%80%81ajax%E7%9A%84%E6%96%B9%E6%B3%95/"/>
-    <id>http://www.cherishhsieh.com/2016/06/27/防止重复发送ajax的方法/</id>
-    <published>2016-06-27T09:24:54.000Z</published>
-    <updated>2016-06-27T09:24:54.028Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>express与koa</title>
-    <link href="http://www.cherishhsieh.com/2016/06/26/express%E4%B8%8Ekoa/"/>
-    <id>http://www.cherishhsieh.com/2016/06/26/express与koa/</id>
-    <published>2016-06-26T11:03:44.000Z</published>
-    <updated>2016-06-27T06:51:26.610Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="Nodejs" scheme="http://www.cherishhsieh.com/categories/Nodejs/"/>
-    
-    
-      <category term="Nodejs" scheme="http://www.cherishhsieh.com/tags/Nodejs/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用nodejs搭建web服务器</title>
-    <link href="http://www.cherishhsieh.com/2016/06/25/%E4%BD%BF%E7%94%A8nodejs%E6%90%AD%E5%BB%BAweb%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    <id>http://www.cherishhsieh.com/2016/06/25/使用nodejs搭建web服务器/</id>
-    <published>2016-06-25T05:52:41.000Z</published>
-    <updated>2016-06-27T07:10:04.498Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="Nodejs" scheme="http://www.cherishhsieh.com/categories/Nodejs/"/>
-    
-    
-      <category term="Nodejs" scheme="http://www.cherishhsieh.com/tags/Nodejs/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vue与Vuex</title>
-    <link href="http://www.cherishhsieh.com/2016/06/25/Vue%E4%B8%8EVuex/"/>
-    <id>http://www.cherishhsieh.com/2016/06/25/Vue与Vuex/</id>
-    <published>2016-06-25T04:59:18.000Z</published>
-    <updated>2016-06-27T06:51:26.610Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Jquery源码阅读</title>
-    <link href="http://www.cherishhsieh.com/2016/06/21/Jquery%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/"/>
-    <id>http://www.cherishhsieh.com/2016/06/21/Jquery源码阅读/</id>
-    <published>2016-06-21T06:25:18.000Z</published>
-    <updated>2016-06-27T07:20:13.172Z</updated>
-    
-    <content type="html">&lt;blockquote&gt;
-&lt;p&gt;jQuery 版本：2.0.3&lt;br&gt;jQuery 源码学习笔记：&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;1-整体架构&quot;&gt;&lt;a href=&quot;#1-整体架构&quot; class=&quot;headerlink&quot; title=&quot;1. 整体架构&quot;&gt;&lt;/a&gt;1. 整体架构&lt;/h1&gt;&lt;p&gt;Jquey的核心是从HTML文档中匹配元素后执行操作&lt;br&gt;如：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$(selector).append(html)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$(selector).html(html).css()&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;具体步骤可分为:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;构造jQuery对象&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;调用jQuery方法&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;jQuery 版本：2.0.3&lt;br&gt;jQuery 源码学习笔记：&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;1-整体架构&quot;&gt;&lt;a href=&quot;#1-整体架构&quot; class=&quot;headerlink&quot; title=&quot;1. 整体架构&quot;&gt;&lt;/a
-    
-    </summary>
-    
-      <category term="JavaScript" scheme="http://www.cherishhsieh.com/categories/JavaScript/"/>
-    
-    
-      <category term="Jquery" scheme="http://www.cherishhsieh.com/tags/Jquery/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS绘制三角形</title>
-    <link href="http://www.cherishhsieh.com/2016/06/21/CSS%E7%BB%98%E5%88%B6%E4%B8%89%E8%A7%92%E5%BD%A2/"/>
-    <id>http://www.cherishhsieh.com/2016/06/21/CSS绘制三角形/</id>
-    <published>2016-06-21T03:18:12.000Z</published>
-    <updated>2016-06-21T03:18:12.273Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>flexbox伸缩盒布局</title>
-    <link href="http://www.cherishhsieh.com/2016/06/21/flexbox%E4%BC%B8%E7%BC%A9%E7%9B%92%E5%B8%83%E5%B1%80/"/>
-    <id>http://www.cherishhsieh.com/2016/06/21/flexbox伸缩盒布局/</id>
-    <published>2016-06-21T01:37:20.000Z</published>
-    <updated>2016-06-21T01:37:20.750Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>react-router使用指南</title>
-    <link href="http://www.cherishhsieh.com/2016/06/20/react-router%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/"/>
-    <id>http://www.cherishhsieh.com/2016/06/20/react-router使用指南/</id>
-    <published>2016-06-20T09:00:39.000Z</published>
-    <updated>2016-06-20T09:00:39.130Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Flux与Redux比较</title>
-    <link href="http://www.cherishhsieh.com/2016/06/15/Flux%E4%B8%8ERedux%E6%AF%94%E8%BE%83/"/>
-    <id>http://www.cherishhsieh.com/2016/06/15/Flux与Redux比较/</id>
-    <published>2016-06-15T07:01:40.000Z</published>
-    <updated>2016-06-15T07:01:40.108Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Redux学习总结</title>
     <link href="http://www.cherishhsieh.com/2016/06/15/Redux%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
     <id>http://www.cherishhsieh.com/2016/06/15/Redux学习总结/</id>
     <published>2016-06-15T07:01:17.000Z</published>
-    <updated>2016-06-27T06:52:40.811Z</updated>
+    <updated>2016-06-30T08:53:34.695Z</updated>
     
     <content type="html"></content>
     
@@ -203,7 +28,7 @@
     
     </summary>
     
-      <category term="Redux" scheme="http://www.cherishhsieh.com/categories/Redux/"/>
+      <category term="React" scheme="http://www.cherishhsieh.com/categories/React/"/>
     
     
       <category term="Redux" scheme="http://www.cherishhsieh.com/tags/Redux/"/>
@@ -211,11 +36,11 @@
   </entry>
   
   <entry>
-    <title>React学习总结</title>
-    <link href="http://www.cherishhsieh.com/2016/06/15/React%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
-    <id>http://www.cherishhsieh.com/2016/06/15/React学习总结/</id>
-    <published>2016-06-15T07:01:07.000Z</published>
-    <updated>2016-06-15T07:01:07.772Z</updated>
+    <title>React-Nactive学习总结</title>
+    <link href="http://www.cherishhsieh.com/2016/06/11/React-Nactive%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
+    <id>http://www.cherishhsieh.com/2016/06/11/React-Nactive学习总结/</id>
+    <published>2016-06-11T08:49:01.000Z</published>
+    <updated>2016-06-30T08:53:30.154Z</updated>
     
     <content type="html"></content>
     
@@ -223,15 +48,71 @@
     
     </summary>
     
+      <category term="React" scheme="http://www.cherishhsieh.com/categories/React/"/>
+    
+    
+      <category term="React-Native" scheme="http://www.cherishhsieh.com/tags/React-Native/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>react-router使用指南</title>
+    <link href="http://www.cherishhsieh.com/2016/05/20/react-router%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/"/>
+    <id>http://www.cherishhsieh.com/2016/05/20/react-router使用指南/</id>
+    <published>2016-05-20T09:00:39.000Z</published>
+    <updated>2016-06-30T08:50:31.247Z</updated>
+    
+    <content type="html">&lt;p&gt;react-router 作为react的路由插件，整体使用上我觉得比vue-router更为方便（除了变来变去的api），&lt;br&gt;特别是路由嵌套简洁很多。&lt;br&gt;原文见&lt;a href=&quot;https://github.com/reactjs/react-router-tutorial&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;react-router-tutorial&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;一、安装&quot;&gt;&lt;a href=&quot;#一、安装&quot; class=&quot;headerlink&quot; title=&quot;一、安装&quot;&gt;&lt;/a&gt;一、安装&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install react-router --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;二、显示路由&quot;&gt;&lt;a href=&quot;#二、显示路由&quot; class=&quot;headerlink&quot; title=&quot;二、显示路由&quot;&gt;&lt;/a&gt;二、显示路由&lt;/h2&gt;&lt;p&gt;在入口文件处&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;引入&lt;code&gt;Router&lt;/code&gt; 、&lt;code&gt;Route&lt;/code&gt;、&lt;code&gt;hashHistory&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;render &lt;code&gt;Router&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; &amp;#123; Router, Route, hashHistory &amp;#125; &lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&#39;react-router&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; About &lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&#39;./modules/About&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; Repos &lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&#39;./modules/Repos&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;render((&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;Router history=&amp;#123;hashHistory&amp;#125;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;Route path=&quot;/&quot; component=&amp;#123;App&amp;#125;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;Route path=&quot;/repos&quot; component=&amp;#123;Repos&amp;#125;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;Route path=&quot;/about&quot; component=&amp;#123;About&amp;#125;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;/Router&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;), document.getElementById(&#39;app&#39;))&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;使用history api 管理路由时：&lt;br&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// index.js&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// ...&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; &amp;#123; Router, Route, browserHistory &amp;#125; &lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&#39;react-router&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;render((&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;Router&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;history&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&amp;#123;browserHistory&amp;#125;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#123;/* ... */&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;Router&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;), &lt;span class=&quot;built_in&quot;&gt;document&lt;/span&gt;.getElementById(&lt;span class=&quot;string&quot;&gt;&#39;app&#39;&lt;/span&gt;))&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&quot;三、嵌套路由&quot;&gt;&lt;a href=&quot;#三、嵌套路由&quot; class=&quot;headerlink&quot; title=&quot;三、嵌套路由&quot;&gt;&lt;/a&gt;三、嵌套路由&lt;/h2&gt;&lt;p&gt;嵌套路由的实现相比vue-router中通过声明子路由的方法简洁直观了很多&lt;br&gt;路由的嵌套与对应组件的嵌套之间是存在对应关系，通过这种对应关系来实现嵌套路由&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;App&amp;gt;       &amp;#123;/*  /          */&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;Repos&amp;gt;   &amp;#123;/*  /repos     */&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;Repo/&amp;gt; &amp;#123;/*  /repos/123 */&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;/Repos&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/App&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// index.js&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// ...&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;render((&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;Router history=&amp;#123;hashHistory&amp;#125;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;Route path=&quot;/&quot; component=&amp;#123;App&amp;#125;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#123;/* make them children of `App` */&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;lt;Route path=&quot;/repos&quot; component=&amp;#123;Repos&amp;#125;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;lt;Route path=&quot;/about&quot; component=&amp;#123;About&amp;#125;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;/Route&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;/Router&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;), document.getElementById(&#39;app&#39;))&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// modules/App.js&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// ...&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  render() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; (&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;h1&lt;/span&gt;&amp;gt;&lt;/span&gt;Ghettohub Issues&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;h1&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;ul&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;role&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;nav&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;Link&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;to&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;/about&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;About&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;Link&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;Link&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;to&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;/repos&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;Repos&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;Link&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#123;/* add this */&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#123;this.props.children&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    )&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// ...&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;四、导航样式&quot;&gt;&lt;a href=&quot;#四、导航样式&quot; class=&quot;headerlink&quot; title=&quot;四、导航样式&quot;&gt;&lt;/a&gt;四、导航样式&lt;/h2&gt;&lt;p&gt;访问各路由时显示对应的激活样式&lt;/p&gt;
+&lt;h4 id=&quot;1-Active-Styles&quot;&gt;&lt;a href=&quot;#1-Active-Styles&quot; class=&quot;headerlink&quot; title=&quot;1. Active Styles&quot;&gt;&lt;/a&gt;1. Active Styles&lt;/h4&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// modules/App.js&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;li&amp;gt;&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;Link&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;to&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;/about&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;activeStyle&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&amp;#123;&amp;#123;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;color:&lt;/span&gt; &#39;&lt;span class=&quot;attr&quot;&gt;red&lt;/span&gt;&#39; &amp;#125;&amp;#125;&amp;gt;&lt;/span&gt;About&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;Link&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;li&amp;gt;&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;Link&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;to&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;/repos&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;activeStyle&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&amp;#123;&amp;#123;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;color:&lt;/span&gt; &#39;&lt;span class=&quot;attr&quot;&gt;red&lt;/span&gt;&#39; &amp;#125;&amp;#125;&amp;gt;&lt;/span&gt;Repos&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;Link&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&quot;2-Active-Class-Name&quot;&gt;&lt;a href=&quot;#2-Active-Class-Name&quot; class=&quot;headerlink&quot; title=&quot;2. Active Class Name&quot;&gt;&lt;/a&gt;2. Active Class Name&lt;/h4&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// modules/App.js&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;li&amp;gt;&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;Link&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;to&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;/about&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;activeClassName&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;active&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;About&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;Link&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;li&amp;gt;&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;Link&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;to&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;/repos&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;activeClassName&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;active&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;Repos&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;Link&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-class&quot;&gt;.active&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;attribute&quot;&gt;color&lt;/span&gt;: green;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&quot;3-封装成NavLink组件&quot;&gt;&lt;a href=&quot;#3-封装成NavLink组件&quot; class=&quot;headerlink&quot; title=&quot;3. 封装成NavLink组件&quot;&gt;&lt;/a&gt;3. 封装成NavLink组件&lt;/h4&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; React &lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&#39;react&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; &amp;#123; Link &amp;#125; &lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&#39;react-router&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;default&lt;/span&gt; React.createClass(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  render() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;Link&lt;/span&gt; &amp;#123;&lt;span class=&quot;attr&quot;&gt;...this.props&lt;/span&gt;&amp;#125; &lt;span class=&quot;attr&quot;&gt;activeClassName&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;active&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// modules/App.js&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; NavLink &lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&#39;./NavLink&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// ...&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;li&amp;gt;&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;NavLink&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;to&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;/about&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;About&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;NavLink&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;li&amp;gt;&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;NavLink&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;to&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;/repos&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;Repos&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;NavLink&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&quot;4-IndexLink&quot;&gt;&lt;a href=&quot;#4-IndexLink&quot; class=&quot;headerlink&quot; title=&quot;4. IndexLink&quot;&gt;&lt;/a&gt;4. IndexLink&lt;/h4&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// App.js&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; &amp;#123; IndexLink &amp;#125; &lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&#39;react-router&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// ...&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;li&amp;gt;&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;IndexLink&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;to&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;/&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;activeClassName&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;active&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;Home&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;IndexLink&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&quot;5-onlyActiveOnIndex&quot;&gt;&lt;a href=&quot;#5-onlyActiveOnIndex&quot; class=&quot;headerlink&quot; title=&quot;5. onlyActiveOnIndex&quot;&gt;&lt;/a&gt;5. onlyActiveOnIndex&lt;/h4&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;li&amp;gt;&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;Link&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;to&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;/&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;activeClassName&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;active&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;onlyActiveOnIndex&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&amp;#123;true&amp;#125;&lt;/span&gt;&amp;gt;&lt;/span&gt;Home&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;Link&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;li&amp;gt;&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;NavLink&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;to&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;/&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;onlyActiveOnIndex&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&amp;#123;true&amp;#125;&lt;/span&gt;&amp;gt;&lt;/span&gt;Home&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;NavLink&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;五、参数传递&quot;&gt;&lt;a href=&quot;#五、参数传递&quot; class=&quot;headerlink&quot; title=&quot;五、参数传递&quot;&gt;&lt;/a&gt;五、参数传递&lt;/h2&gt;&lt;p&gt;用户获取及传递url中附带的参数&lt;br&gt;有&lt;code&gt;/repos/:userName/:repoName&lt;/code&gt;这样的路由&lt;/p&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// modules/Repo.js&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; React &lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&#39;react&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;default&lt;/span&gt; React.createClass(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  render() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; (&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;h2&lt;/span&gt;&amp;gt;&lt;/span&gt;&amp;#123;this.props.params.repoName&amp;#125;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;h2&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    )&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// ...&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// import Repo&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; Repo &lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&#39;./modules/Repo&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;render((&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;Router history=&amp;#123;hashHistory&amp;#125;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;Route path=&quot;/&quot; component=&amp;#123;App&amp;#125;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;lt;Route path=&quot;/repos&quot; component=&amp;#123;Repos&amp;#125;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#123;/* 添加新路由 */&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;lt;Route path=&quot;/repos/:userName/:repoName&quot; component=&amp;#123;Repo&amp;#125;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;lt;Route path=&quot;/about&quot; component=&amp;#123;About&amp;#125;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;/Route&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;/Router&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;), document.getElementById(&#39;app&#39;))&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// Repos.js&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; &amp;#123; Link &amp;#125; &lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&#39;react-router&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// ...&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;default&lt;/span&gt; React.createClass(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  render() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; (&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;h2&lt;/span&gt;&amp;gt;&lt;/span&gt;Repos&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;h2&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#123;/* 添加跳转链接 */&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;Link&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;to&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;/repos/reactjs/react-router&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;React Router&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;Link&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;Link&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;to&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;/repos/facebook/react&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;React&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;Link&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    )&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;六、设置初始路由&quot;&gt;&lt;a href=&quot;#六、设置初始路由&quot; class=&quot;headerlink&quot; title=&quot;六、设置初始路由&quot;&gt;&lt;/a&gt;六、设置初始路由&lt;/h2&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// index.js&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 从&#39;react-router&#39; 中添加新的引用： `IndexRoute`&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; &amp;#123; Router, Route, hashHistory, IndexRoute &amp;#125; &lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&#39;react-router&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 添加 Home 组件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; Home &lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&#39;./modules/Home&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// ...&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;render((&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;Router history=&amp;#123;hashHistory&amp;#125;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;Route path=&quot;/&quot; component=&amp;#123;App&amp;#125;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#123;/* 将Home组件作为 `/`的子路由添加 */&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;lt;IndexRoute component=&amp;#123;Home&amp;#125;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;lt;Route path=&quot;/repos&quot; component=&amp;#123;Repos&amp;#125;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;lt;Route path=&quot;/repos/:userName/:repoName&quot; component=&amp;#123;Repo&amp;#125;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;lt;/Route&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;lt;Route path=&quot;/about&quot; component=&amp;#123;About&amp;#125;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;/Route&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;/Router&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;), document.getElementById(&#39;app&#39;))&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;七、触发路由&quot;&gt;&lt;a href=&quot;#七、触发路由&quot; class=&quot;headerlink&quot; title=&quot;七、触发路由&quot;&gt;&lt;/a&gt;七、触发路由&lt;/h2&gt;&lt;p&gt;使用&lt;code&gt;browserHistory&lt;/code&gt;&lt;br&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// modules/Repos.js&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; &amp;#123; browserHistory &amp;#125; &lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&#39;react-router&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// ...&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  handleSubmit(event) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// ...&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; path = &lt;span class=&quot;string&quot;&gt;`/repos/&lt;span class=&quot;subst&quot;&gt;$&amp;#123;userName&amp;#125;&lt;/span&gt;/&lt;span class=&quot;subst&quot;&gt;$&amp;#123;repo&amp;#125;&lt;/span&gt;`&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    browserHistory.push(path)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// ...&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;使用&lt;code&gt;Router&lt;/code&gt;&lt;br&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// ask for `router` from context&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  contextTypes: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    router: React.PropTypes.object&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;comment&quot;&gt;// ...&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  handleSubmit(event) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// ...&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;.context.router.push(path)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;react-router 作为react的路由插件，整体使用上我觉得比vue-router更为方便（除了变来变去的api），&lt;br&gt;特别是路由嵌套简洁很多。&lt;br&gt;原文见&lt;a href=&quot;https://github.com/reactjs/react-router-tut
+    
+    </summary>
+    
+      <category term="React" scheme="http://www.cherishhsieh.com/categories/React/"/>
+    
+    
+      <category term="React" scheme="http://www.cherishhsieh.com/tags/React/"/>
     
   </entry>
   
   <entry>
     <title>ESLint使用备查</title>
-    <link href="http://www.cherishhsieh.com/2016/06/14/Eslint%E4%BD%BF%E7%94%A8%E5%A4%87%E6%9F%A5/"/>
-    <id>http://www.cherishhsieh.com/2016/06/14/Eslint使用备查/</id>
-    <published>2016-06-14T03:48:43.000Z</published>
-    <updated>2016-06-15T04:59:10.401Z</updated>
+    <link href="http://www.cherishhsieh.com/2016/03/27/Eslint%E4%BD%BF%E7%94%A8%E5%A4%87%E6%9F%A5/"/>
+    <id>http://www.cherishhsieh.com/2016/03/27/Eslint使用备查/</id>
+    <published>2016-03-27T03:48:43.000Z</published>
+    <updated>2016-06-30T08:49:36.343Z</updated>
     
     <content type="html">&lt;p&gt;ESLint是以可扩展、每条规则独立、不内置编码风格为理念的lint工具&lt;/p&gt;
 &lt;h3 id=&quot;1-安装&quot;&gt;&lt;a href=&quot;#1-安装&quot; class=&quot;headerlink&quot; title=&quot;1. 安装&quot;&gt;&lt;/a&gt;1. 安装&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install -g eslint&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -282,40 +163,75 @@
   </entry>
   
   <entry>
-    <title>Javascript事件</title>
-    <link href="http://www.cherishhsieh.com/2016/06/07/Javascript%E4%BA%8B%E4%BB%B6/"/>
-    <id>http://www.cherishhsieh.com/2016/06/07/Javascript事件/</id>
-    <published>2016-06-07T02:16:30.000Z</published>
-    <updated>2016-06-15T06:40:12.771Z</updated>
+    <title>Vue与Vuex</title>
+    <link href="http://www.cherishhsieh.com/2016/03/25/Vue%E4%B8%8EVuex/"/>
+    <id>http://www.cherishhsieh.com/2016/03/25/Vue与Vuex/</id>
+    <published>2016-03-25T04:59:18.000Z</published>
+    <updated>2016-06-30T08:53:06.775Z</updated>
     
-    <content type="html">&lt;h2 id=&quot;1-事件流&quot;&gt;&lt;a href=&quot;#1-事件流&quot; class=&quot;headerlink&quot; title=&quot;1. 事件流&quot;&gt;&lt;/a&gt;1. 事件流&lt;/h2&gt;&lt;p&gt;事件流描述的是从页面中接收事件的顺序&lt;/p&gt;
-&lt;h4 id=&quot;1-1-事件冒泡&quot;&gt;&lt;a href=&quot;#1-1-事件冒泡&quot; class=&quot;headerlink&quot; title=&quot;1.1 事件冒泡&quot;&gt;&lt;/a&gt;1.1 事件冒泡&lt;/h4&gt;&lt;p&gt;IE的事件流：事件冒泡（event bubbling），即事件开始时由最具体的元素（文档中嵌套层次最深的那个节点）接收，然后逐级向上传播到较为不具体的节点（文档）&lt;/p&gt;
-&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;Event Bubbling Example&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;id&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;myDiv&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;Click Me&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;点击页面中的&lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;元素，那么click事件会按照如下顺序传播：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;document&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4 id=&quot;1-2-事件捕获&quot;&gt;&lt;a href=&quot;#1-2-事件捕获&quot; class=&quot;headerlink&quot; title=&quot;1.2 事件捕获&quot;&gt;&lt;/a&gt;1.2 事件捕获&lt;/h4&gt;&lt;p&gt;事件捕获的思想是不太具体的节点应该更早接收到事件，而最具体的节点应该最后接收到事件。&lt;br&gt;事件捕获的用意在于在事件到达预定目标之前捕获它。&lt;/p&gt;
-&lt;p&gt;点击页面中的&lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;元素，click事件会按照如下顺序传播：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;document&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4 id=&quot;1-2-DOM事件流&quot;&gt;&lt;a href=&quot;#1-2-DOM事件流&quot; class=&quot;headerlink&quot; title=&quot;1.2 DOM事件流&quot;&gt;&lt;/a&gt;1.2 DOM事件流&lt;/h4&gt;&lt;p&gt;“DOM2级事件”规定的事件流包括三个阶段：事件捕获阶段、处于目标阶段和事件冒泡阶段&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://img1.zsgjs.com/upfile/file/2016/0615/7644326177bdc141c1b2b85d4575d528.png&quot; alt=&quot;Alt text&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;2-事件处理程序&quot;&gt;&lt;a href=&quot;#2-事件处理程序&quot; class=&quot;headerlink&quot; title=&quot;2. 事件处理程序&quot;&gt;&lt;/a&gt;2. 事件处理程序&lt;/h2&gt;&lt;p&gt;响应某个事件的函数就是事件处理程序，或事件侦听器&lt;/p&gt;
-&lt;h4 id=&quot;2-1-HTML事件处理程序&quot;&gt;&lt;a href=&quot;#2-1-HTML事件处理程序&quot; class=&quot;headerlink&quot; title=&quot;2.1 HTML事件处理程序&quot;&gt;&lt;/a&gt;2.1 HTML事件处理程序&lt;/h4&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;button&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;btn&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;onclick&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;alert(&#39;Clicked&#39;)&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;value&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;Click Me&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&quot;2-2-DOM-0级事件处理程序&quot;&gt;&lt;a href=&quot;#2-2-DOM-0级事件处理程序&quot; class=&quot;headerlink&quot; title=&quot;2.2 DOM 0级事件处理程序&quot;&gt;&lt;/a&gt;2.2 DOM 0级事件处理程序&lt;/h4&gt;</content>
+    <content type="html"></content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;1-事件流&quot;&gt;&lt;a href=&quot;#1-事件流&quot; class=&quot;headerlink&quot; title=&quot;1. 事件流&quot;&gt;&lt;/a&gt;1. 事件流&lt;/h2&gt;&lt;p&gt;事件流描述的是从页面中接收事件的顺序&lt;/p&gt;
-&lt;h4 id=&quot;1-1-事件冒泡&quot;&gt;&lt;a href=&quot;#1-1-事
+    </summary>
+    
+      <category term="Javascript" scheme="http://www.cherishhsieh.com/categories/Javascript/"/>
+    
+    
+      <category term="Vue" scheme="http://www.cherishhsieh.com/tags/Vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Weui使用</title>
+    <link href="http://www.cherishhsieh.com/2016/03/14/Weui%E4%BD%BF%E7%94%A8/"/>
+    <id>http://www.cherishhsieh.com/2016/03/14/Weui使用/</id>
+    <published>2016-03-14T08:49:13.000Z</published>
+    <updated>2016-06-30T08:53:15.543Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="前端" scheme="http://www.cherishhsieh.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="CSS" scheme="http://www.cherishhsieh.com/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>express与koa</title>
+    <link href="http://www.cherishhsieh.com/2016/02/26/express%E4%B8%8Ekoa/"/>
+    <id>http://www.cherishhsieh.com/2016/02/26/express与koa/</id>
+    <published>2016-02-26T11:03:44.000Z</published>
+    <updated>2016-06-30T08:45:51.302Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="Nodejs" scheme="http://www.cherishhsieh.com/categories/Nodejs/"/>
+    
+    
+      <category term="Nodejs" scheme="http://www.cherishhsieh.com/tags/Nodejs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ES2015 总结</title>
+    <link href="http://www.cherishhsieh.com/2016/02/12/ES2015-%E6%80%BB%E7%BB%93/"/>
+    <id>http://www.cherishhsieh.com/2016/02/12/ES2015-总结/</id>
+    <published>2016-02-12T10:34:05.000Z</published>
+    <updated>2016-06-30T08:45:37.871Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
     
     </summary>
     
@@ -327,11 +243,215 @@
   </entry>
   
   <entry>
+    <title>CommonJs、AMD、UMD与Webpack</title>
+    <link href="http://www.cherishhsieh.com/2015/11/30/CommonJs%E3%80%81AMD%E3%80%81UMD%E4%B8%8EWebpack/"/>
+    <id>http://www.cherishhsieh.com/2015/11/30/CommonJs、AMD、UMD与Webpack/</id>
+    <published>2015-11-30T09:56:11.000Z</published>
+    <updated>2016-06-30T09:57:01.922Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="前端" scheme="http://www.cherishhsieh.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="Javascript" scheme="http://www.cherishhsieh.com/tags/Javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>React学习总结</title>
+    <link href="http://www.cherishhsieh.com/2015/11/15/React%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
+    <id>http://www.cherishhsieh.com/2015/11/15/React学习总结/</id>
+    <published>2015-11-15T07:01:07.000Z</published>
+    <updated>2016-06-30T08:53:47.208Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="React" scheme="http://www.cherishhsieh.com/categories/React/"/>
+    
+    
+      <category term="React" scheme="http://www.cherishhsieh.com/tags/React/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown语法总结</title>
+    <link href="http://www.cherishhsieh.com/2015/10/23/Markdown%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/"/>
+    <id>http://www.cherishhsieh.com/2015/10/23/Markdown语法总结/</id>
+    <published>2015-10-23T05:45:12.000Z</published>
+    <updated>2016-06-30T08:46:42.430Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;特殊字符自动转换&quot;&gt;&lt;a href=&quot;#特殊字符自动转换&quot; class=&quot;headerlink&quot; title=&quot;特殊字符自动转换&quot;&gt;&lt;/a&gt;特殊字符自动转换&lt;/h2&gt;&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;amp;字符&lt;br&gt;&amp;lt;字符&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;区块元素&quot;&gt;&lt;a href=&quot;#区块元素&quot; class=&quot;headerlink&quot; title=&quot;区块元素&quot;&gt;&lt;/a&gt;区块元素&lt;/h2&gt;&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;段落和换行&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;标题&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;类Setext形式&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;This is an H1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;=============&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;This is an H2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;=============&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;类Atx形式&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 这是H1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;## 这是H2&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;区块引用&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;代码区块&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;分割线&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;区段元素&quot;&gt;&lt;a href=&quot;#区段元素&quot; class=&quot;headerlink&quot; title=&quot;区段元素&quot;&gt;&lt;/a&gt;区段元素&lt;/h2&gt;&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;链接&lt;br&gt;这是&lt;a href=&quot;http://www.cherishhsieh.com&quot;&gt;我的blog&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;强调&lt;br&gt;&lt;strong&gt;文本区域&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;代码&lt;br&gt;Use the &lt;code&gt;printf()&lt;/code&gt; function&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;图片&lt;br&gt;&lt;img src=&quot;https://avatars2.githubusercontent.com/u/6762420?v=3&amp;amp;s=460&quot; alt=&quot;Alt text&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;其他&quot;&gt;&lt;a href=&quot;#其他&quot; class=&quot;headerlink&quot; title=&quot;其他&quot;&gt;&lt;/a&gt;其他&lt;/h2&gt;&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;自动链接&lt;br&gt;&lt;a href=&quot;http://www.cherishhsieh.com&quot;&gt;http://www.cherishhsieh.com&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;&amp;#x6d;&amp;#97;&amp;#x69;&amp;#x6c;&amp;#x74;&amp;#111;&amp;#x3a;&amp;#120;&amp;#x69;&amp;#x65;&amp;#113;&amp;#105;&amp;#110;&amp;#49;&amp;#57;&amp;#57;&amp;#49;&amp;#64;&amp;#103;&amp;#x6d;&amp;#97;&amp;#x69;&amp;#108;&amp;#46;&amp;#99;&amp;#x6f;&amp;#109;&quot;&gt;&amp;#120;&amp;#x69;&amp;#x65;&amp;#113;&amp;#105;&amp;#110;&amp;#49;&amp;#57;&amp;#57;&amp;#49;&amp;#64;&amp;#103;&amp;#x6d;&amp;#97;&amp;#x69;&amp;#108;&amp;#46;&amp;#99;&amp;#x6f;&amp;#109;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;反斜杠&lt;br&gt;*literal asterisks*&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;\   反斜线&lt;br&gt;`   反引号&lt;br&gt;*   星号&lt;br&gt;_   底线&lt;br&gt;{}  花括号&lt;br&gt;[]  方括号&lt;br&gt;()  括弧&lt;br&gt;#   井字号&lt;br&gt;+   加号&lt;br&gt;-   减号&lt;br&gt;.   英文句点&lt;br&gt;!   惊叹号&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;特殊字符自动转换&quot;&gt;&lt;a href=&quot;#特殊字符自动转换&quot; class=&quot;headerlink&quot; title=&quot;特殊字符自动转换&quot;&gt;&lt;/a&gt;特殊字符自动转换&lt;/h2&gt;&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;amp;字符&lt;br&gt;&amp;lt;字符&lt;/p&gt;
+&lt;/bloc
+    
+    </summary>
+    
+      <category term="Markdown" scheme="http://www.cherishhsieh.com/categories/Markdown/"/>
+    
+    
+      <category term="Markdown" scheme="http://www.cherishhsieh.com/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue.js</title>
+    <link href="http://www.cherishhsieh.com/2015/09/09/Vue/"/>
+    <id>http://www.cherishhsieh.com/2015/09/09/Vue/</id>
+    <published>2015-09-09T09:46:23.000Z</published>
+    <updated>2016-06-30T08:53:01.904Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="Javascript" scheme="http://www.cherishhsieh.com/categories/Javascript/"/>
+    
+    
+      <category term="Vue" scheme="http://www.cherishhsieh.com/tags/Vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Jquery源码阅读(二)</title>
+    <link href="http://www.cherishhsieh.com/2015/08/30/Jquery%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB-%E4%BA%8C/"/>
+    <id>http://www.cherishhsieh.com/2015/08/30/Jquery源码阅读-二/</id>
+    <published>2015-08-30T09:27:53.000Z</published>
+    <updated>2016-06-30T09:28:05.688Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Jquery源码阅读</title>
+    <link href="http://www.cherishhsieh.com/2015/08/21/Jquery%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/"/>
+    <id>http://www.cherishhsieh.com/2015/08/21/Jquery源码阅读/</id>
+    <published>2015-08-21T06:25:18.000Z</published>
+    <updated>2016-06-30T08:46:36.638Z</updated>
+    
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;jQuery 版本：2.0.3&lt;br&gt;jQuery 源码学习笔记：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;1-整体架构&quot;&gt;&lt;a href=&quot;#1-整体架构&quot; class=&quot;headerlink&quot; title=&quot;1. 整体架构&quot;&gt;&lt;/a&gt;1. 整体架构&lt;/h1&gt;&lt;p&gt;Jquey的核心是从HTML文档中匹配元素后执行操作&lt;br&gt;如：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$(selector).append(html)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$(selector).html(html).css()&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;具体步骤可分为:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;构造jQuery对象&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;调用jQuery方法&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;jQuery 版本：2.0.3&lt;br&gt;jQuery 源码学习笔记：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;1-整体架构&quot;&gt;&lt;a href=&quot;#1-整体架构&quot; class=&quot;headerlink&quot; title=&quot;1. 整体架构&quot;&gt;&lt;/a
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="http://www.cherishhsieh.com/categories/JavaScript/"/>
+    
+    
+      <category term="Jquery" scheme="http://www.cherishhsieh.com/tags/Jquery/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用nodejs搭建web服务器</title>
+    <link href="http://www.cherishhsieh.com/2015/07/25/%E4%BD%BF%E7%94%A8nodejs%E6%90%AD%E5%BB%BAweb%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    <id>http://www.cherishhsieh.com/2015/07/25/使用nodejs搭建web服务器/</id>
+    <published>2015-07-25T05:52:41.000Z</published>
+    <updated>2016-06-30T09:24:51.840Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="Nodejs" scheme="http://www.cherishhsieh.com/categories/Nodejs/"/>
+    
+    
+      <category term="Nodejs" scheme="http://www.cherishhsieh.com/tags/Nodejs/"/>
+    
+  </entry>
+  
+  <entry>
     <title>客户端检测</title>
-    <link href="http://www.cherishhsieh.com/2016/06/04/%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%A3%80%E6%B5%8B/"/>
-    <id>http://www.cherishhsieh.com/2016/06/04/客户端检测/</id>
-    <published>2016-06-04T05:36:19.000Z</published>
-    <updated>2016-06-06T03:24:53.471Z</updated>
+    <link href="http://www.cherishhsieh.com/2015/06/04/%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%A3%80%E6%B5%8B/"/>
+    <id>http://www.cherishhsieh.com/2015/06/04/客户端检测/</id>
+    <published>2015-06-04T05:36:19.000Z</published>
+    <updated>2016-06-30T08:45:16.102Z</updated>
     
     <content type="html">&lt;h1 id=&quot;客户端检测&quot;&gt;&lt;a href=&quot;#客户端检测&quot; class=&quot;headerlink&quot; title=&quot;客户端检测&quot;&gt;&lt;/a&gt;客户端检测&lt;/h1&gt;&lt;hr&gt;
 &lt;h3 id=&quot;能力检测（特性检测）&quot;&gt;&lt;a href=&quot;#能力检测（特性检测）&quot; class=&quot;headerlink&quot; title=&quot;能力检测（特性检测）&quot;&gt;&lt;/a&gt;能力检测（特性检测）&lt;/h3&gt;&lt;blockquote&gt;
@@ -366,11 +486,61 @@
   </entry>
   
   <entry>
+    <title>Javascript面向对象编程</title>
+    <link href="http://www.cherishhsieh.com/2015/05/23/Javascript%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/"/>
+    <id>http://www.cherishhsieh.com/2015/05/23/Javascript面向对象编程/</id>
+    <published>2015-05-23T05:42:42.000Z</published>
+    <updated>2016-06-30T08:46:21.943Z</updated>
+    
+    <content type="html">&lt;p&gt;ECMA-262把对象定义为：”无序属性的集合，其属性可以包含基本值、对象或者函数。”&lt;/p&gt;
+&lt;h2 id=&quot;对象&quot;&gt;&lt;a href=&quot;#对象&quot; class=&quot;headerlink&quot; title=&quot;对象&quot;&gt;&lt;/a&gt;对象&lt;/h2&gt;&lt;h3 id=&quot;属性类型&quot;&gt;&lt;a href=&quot;#属性类型&quot; class=&quot;headerlink&quot; title=&quot;属性类型&quot;&gt;&lt;/a&gt;属性类型&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;数据属性&lt;/li&gt;
+&lt;li&gt;访问器属性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;定义多个属性&quot;&gt;&lt;a href=&quot;#定义多个属性&quot; class=&quot;headerlink&quot; title=&quot;定义多个属性&quot;&gt;&lt;/a&gt;定义多个属性&lt;/h5&gt;&lt;h5 id=&quot;读取属性的特性&quot;&gt;&lt;a href=&quot;#读取属性的特性&quot; class=&quot;headerlink&quot; title=&quot;读取属性的特性&quot;&gt;&lt;/a&gt;读取属性的特性&lt;/h5&gt;&lt;h3 id=&quot;创建对象&quot;&gt;&lt;a href=&quot;#创建对象&quot; class=&quot;headerlink&quot; title=&quot;创建对象&quot;&gt;&lt;/a&gt;创建对象&lt;/h3&gt;&lt;h5 id=&quot;工厂模式&quot;&gt;&lt;a href=&quot;#工厂模式&quot; class=&quot;headerlink&quot; title=&quot;工厂模式&quot;&gt;&lt;/a&gt;工厂模式&lt;/h5&gt;&lt;h5 id=&quot;原型模式&quot;&gt;&lt;a href=&quot;#原型模式&quot; class=&quot;headerlink&quot; title=&quot;原型模式&quot;&gt;&lt;/a&gt;原型模式&lt;/h5&gt;&lt;h5 id=&quot;组合使用构造函数模式和原型模式&quot;&gt;&lt;a href=&quot;#组合使用构造函数模式和原型模式&quot; class=&quot;headerlink&quot; title=&quot;组合使用构造函数模式和原型模式&quot;&gt;&lt;/a&gt;组合使用构造函数模式和原型模式&lt;/h5&gt;&lt;h5 id=&quot;动态原型模式&quot;&gt;&lt;a href=&quot;#动态原型模式&quot; class=&quot;headerlink&quot; title=&quot;动态原型模式&quot;&gt;&lt;/a&gt;动态原型模式&lt;/h5&gt;&lt;h5 id=&quot;寄生构造函数模式&quot;&gt;&lt;a href=&quot;#寄生构造函数模式&quot; class=&quot;headerlink&quot; title=&quot;寄生构造函数模式&quot;&gt;&lt;/a&gt;寄生构造函数模式&lt;/h5&gt;&lt;h5 id=&quot;稳妥构造函数模式&quot;&gt;&lt;a href=&quot;#稳妥构造函数模式&quot; class=&quot;headerlink&quot; title=&quot;稳妥构造函数模式&quot;&gt;&lt;/a&gt;稳妥构造函数模式&lt;/h5&gt;&lt;h3 id=&quot;继承&quot;&gt;&lt;a href=&quot;#继承&quot; class=&quot;headerlink&quot; title=&quot;继承&quot;&gt;&lt;/a&gt;继承&lt;/h3&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;ECMA-262把对象定义为：”无序属性的集合，其属性可以包含基本值、对象或者函数。”&lt;/p&gt;
+&lt;h2 id=&quot;对象&quot;&gt;&lt;a href=&quot;#对象&quot; class=&quot;headerlink&quot; title=&quot;对象&quot;&gt;&lt;/a&gt;对象&lt;/h2&gt;&lt;h3 id=&quot;属性类型&quot;&gt;&lt;a href=
+    
+    </summary>
+    
+      <category term="编程" scheme="http://www.cherishhsieh.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+      <category term="Javascript" scheme="http://www.cherishhsieh.com/tags/Javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Javascript 继承</title>
+    <link href="http://www.cherishhsieh.com/2015/04/10/Javascript-%E7%BB%A7%E6%89%BF/"/>
+    <id>http://www.cherishhsieh.com/2015/04/10/Javascript-继承/</id>
+    <published>2015-04-10T08:50:46.000Z</published>
+    <updated>2016-06-30T08:46:29.182Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;Javascript继承&quot;&gt;&lt;a href=&quot;#Javascript继承&quot; class=&quot;headerlink&quot; title=&quot;Javascript继承&quot;&gt;&lt;/a&gt;Javascript继承&lt;/h1&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Javascript继承&quot;&gt;&lt;a href=&quot;#Javascript继承&quot; class=&quot;headerlink&quot; title=&quot;Javascript继承&quot;&gt;&lt;/a&gt;Javascript继承&lt;/h1&gt;
+    
+    </summary>
+    
+      <category term="编程" scheme="http://www.cherishhsieh.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+      <category term="Javascript" scheme="http://www.cherishhsieh.com/tags/Javascript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Touch手势</title>
-    <link href="http://www.cherishhsieh.com/2016/06/04/Touch%E6%89%8B%E5%8A%BF/"/>
-    <id>http://www.cherishhsieh.com/2016/06/04/Touch手势/</id>
-    <published>2016-06-04T03:18:54.000Z</published>
-    <updated>2016-06-06T03:25:23.252Z</updated>
+    <link href="http://www.cherishhsieh.com/2015/04/04/Touch%E6%89%8B%E5%8A%BF/"/>
+    <id>http://www.cherishhsieh.com/2015/04/04/Touch手势/</id>
+    <published>2015-04-04T03:18:54.000Z</published>
+    <updated>2016-06-30T09:25:01.369Z</updated>
     
     <content type="html">&lt;h2 id=&quot;常见问题&quot;&gt;&lt;a href=&quot;#常见问题&quot; class=&quot;headerlink&quot; title=&quot;常见问题&quot;&gt;&lt;/a&gt;常见问题&lt;/h2&gt;&lt;blockquote&gt;
 &lt;ul&gt;
@@ -410,10 +580,10 @@
   
   <entry>
     <title>点击事件绑定</title>
-    <link href="http://www.cherishhsieh.com/2016/05/25/%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6%E7%BB%91%E5%AE%9A/"/>
-    <id>http://www.cherishhsieh.com/2016/05/25/点击事件绑定/</id>
-    <published>2016-05-25T10:59:53.000Z</published>
-    <updated>2016-06-06T03:25:00.958Z</updated>
+    <link href="http://www.cherishhsieh.com/2015/03/25/%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6%E7%BB%91%E5%AE%9A/"/>
+    <id>http://www.cherishhsieh.com/2015/03/25/点击事件绑定/</id>
+    <published>2015-03-25T10:59:53.000Z</published>
+    <updated>2016-06-30T08:45:22.046Z</updated>
     
     <content type="html">&lt;p&gt;网页界面中与用户的交互通常是通过各种事件来达成的；&lt;br&gt;在各种事件之中，点击事件 往往是最常见、最通用的一种界面事件&lt;/p&gt;
 &lt;h2 id=&quot;点击事件&quot;&gt;&lt;a href=&quot;#点击事件&quot; class=&quot;headerlink&quot; title=&quot;点击事件&quot;&gt;&lt;/a&gt;点击事件&lt;/h2&gt;&lt;hr&gt;
@@ -435,143 +605,6 @@
     
     
       <category term="Jquery" scheme="http://www.cherishhsieh.com/tags/Jquery/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Markdown语法总结</title>
-    <link href="http://www.cherishhsieh.com/2016/05/23/Markdown%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/"/>
-    <id>http://www.cherishhsieh.com/2016/05/23/Markdown语法总结/</id>
-    <published>2016-05-23T05:45:12.000Z</published>
-    <updated>2016-05-25T11:13:40.845Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;特殊字符自动转换&quot;&gt;&lt;a href=&quot;#特殊字符自动转换&quot; class=&quot;headerlink&quot; title=&quot;特殊字符自动转换&quot;&gt;&lt;/a&gt;特殊字符自动转换&lt;/h2&gt;&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;amp;字符&lt;br&gt;&amp;lt;字符&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;区块元素&quot;&gt;&lt;a href=&quot;#区块元素&quot; class=&quot;headerlink&quot; title=&quot;区块元素&quot;&gt;&lt;/a&gt;区块元素&lt;/h2&gt;&lt;hr&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;段落和换行&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;标题&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;类Setext形式&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;This is an H1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;=============&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;This is an H2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;=============&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;类Atx形式&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 这是H1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;## 这是H2&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;区块引用&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;代码区块&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;分割线&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;区段元素&quot;&gt;&lt;a href=&quot;#区段元素&quot; class=&quot;headerlink&quot; title=&quot;区段元素&quot;&gt;&lt;/a&gt;区段元素&lt;/h2&gt;&lt;hr&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;链接&lt;br&gt;这是&lt;a href=&quot;http://www.cherishhsieh.com&quot;&gt;我的blog&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;强调&lt;br&gt;&lt;strong&gt;文本区域&lt;/strong&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;代码&lt;br&gt;Use the &lt;code&gt;printf()&lt;/code&gt; function&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;图片&lt;br&gt;&lt;img src=&quot;https://avatars2.githubusercontent.com/u/6762420?v=3&amp;amp;s=460&quot; alt=&quot;Alt text&quot;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;其他&quot;&gt;&lt;a href=&quot;#其他&quot; class=&quot;headerlink&quot; title=&quot;其他&quot;&gt;&lt;/a&gt;其他&lt;/h2&gt;&lt;hr&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;自动链接&lt;br&gt;&lt;a href=&quot;http://www.cherishhsieh.com&quot;&gt;http://www.cherishhsieh.com&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;&amp;#109;&amp;#97;&amp;#105;&amp;#x6c;&amp;#x74;&amp;#111;&amp;#58;&amp;#120;&amp;#105;&amp;#x65;&amp;#x71;&amp;#105;&amp;#110;&amp;#x31;&amp;#x39;&amp;#x39;&amp;#x31;&amp;#x40;&amp;#x67;&amp;#109;&amp;#x61;&amp;#105;&amp;#x6c;&amp;#46;&amp;#x63;&amp;#111;&amp;#x6d;&quot;&gt;&amp;#120;&amp;#105;&amp;#x65;&amp;#x71;&amp;#105;&amp;#110;&amp;#x31;&amp;#x39;&amp;#x39;&amp;#x31;&amp;#x40;&amp;#x67;&amp;#109;&amp;#x61;&amp;#105;&amp;#x6c;&amp;#46;&amp;#x63;&amp;#111;&amp;#x6d;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;反斜杠&lt;br&gt;*literal asterisks*&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;\   反斜线&lt;br&gt;`   反引号&lt;br&gt;*   星号&lt;br&gt;_   底线&lt;br&gt;{}  花括号&lt;br&gt;[]  方括号&lt;br&gt;()  括弧&lt;br&gt;#   井字号&lt;br&gt;+   加号&lt;br&gt;-   减号&lt;br&gt;.   英文句点&lt;br&gt;!   惊叹号&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;特殊字符自动转换&quot;&gt;&lt;a href=&quot;#特殊字符自动转换&quot; class=&quot;headerlink&quot; title=&quot;特殊字符自动转换&quot;&gt;&lt;/a&gt;特殊字符自动转换&lt;/h2&gt;&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;amp;字符&lt;br&gt;&amp;lt;字符&lt;/p&gt;
-&lt;/bloc
-    
-    </summary>
-    
-      <category term="Markdown" scheme="http://www.cherishhsieh.com/categories/Markdown/"/>
-    
-    
-      <category term="Markdown" scheme="http://www.cherishhsieh.com/tags/Markdown/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Javascript面向对象编程</title>
-    <link href="http://www.cherishhsieh.com/2016/05/23/Javascript%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/"/>
-    <id>http://www.cherishhsieh.com/2016/05/23/Javascript面向对象编程/</id>
-    <published>2016-05-23T05:42:42.000Z</published>
-    <updated>2016-05-30T13:02:34.087Z</updated>
-    
-    <content type="html">&lt;p&gt;ECMA-262把对象定义为：”无序属性的集合，其属性可以包含基本值、对象或者函数。”&lt;/p&gt;
-&lt;h2 id=&quot;对象&quot;&gt;&lt;a href=&quot;#对象&quot; class=&quot;headerlink&quot; title=&quot;对象&quot;&gt;&lt;/a&gt;对象&lt;/h2&gt;&lt;h3 id=&quot;属性类型&quot;&gt;&lt;a href=&quot;#属性类型&quot; class=&quot;headerlink&quot; title=&quot;属性类型&quot;&gt;&lt;/a&gt;属性类型&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;数据属性&lt;/li&gt;
-&lt;li&gt;访问器属性&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h5 id=&quot;定义多个属性&quot;&gt;&lt;a href=&quot;#定义多个属性&quot; class=&quot;headerlink&quot; title=&quot;定义多个属性&quot;&gt;&lt;/a&gt;定义多个属性&lt;/h5&gt;&lt;h5 id=&quot;读取属性的特性&quot;&gt;&lt;a href=&quot;#读取属性的特性&quot; class=&quot;headerlink&quot; title=&quot;读取属性的特性&quot;&gt;&lt;/a&gt;读取属性的特性&lt;/h5&gt;&lt;h3 id=&quot;创建对象&quot;&gt;&lt;a href=&quot;#创建对象&quot; class=&quot;headerlink&quot; title=&quot;创建对象&quot;&gt;&lt;/a&gt;创建对象&lt;/h3&gt;&lt;h5 id=&quot;工厂模式&quot;&gt;&lt;a href=&quot;#工厂模式&quot; class=&quot;headerlink&quot; title=&quot;工厂模式&quot;&gt;&lt;/a&gt;工厂模式&lt;/h5&gt;&lt;h5 id=&quot;原型模式&quot;&gt;&lt;a href=&quot;#原型模式&quot; class=&quot;headerlink&quot; title=&quot;原型模式&quot;&gt;&lt;/a&gt;原型模式&lt;/h5&gt;&lt;h5 id=&quot;组合使用构造函数模式和原型模式&quot;&gt;&lt;a href=&quot;#组合使用构造函数模式和原型模式&quot; class=&quot;headerlink&quot; title=&quot;组合使用构造函数模式和原型模式&quot;&gt;&lt;/a&gt;组合使用构造函数模式和原型模式&lt;/h5&gt;&lt;h5 id=&quot;动态原型模式&quot;&gt;&lt;a href=&quot;#动态原型模式&quot; class=&quot;headerlink&quot; title=&quot;动态原型模式&quot;&gt;&lt;/a&gt;动态原型模式&lt;/h5&gt;&lt;h5 id=&quot;寄生构造函数模式&quot;&gt;&lt;a href=&quot;#寄生构造函数模式&quot; class=&quot;headerlink&quot; title=&quot;寄生构造函数模式&quot;&gt;&lt;/a&gt;寄生构造函数模式&lt;/h5&gt;&lt;h5 id=&quot;稳妥构造函数模式&quot;&gt;&lt;a href=&quot;#稳妥构造函数模式&quot; class=&quot;headerlink&quot; title=&quot;稳妥构造函数模式&quot;&gt;&lt;/a&gt;稳妥构造函数模式&lt;/h5&gt;&lt;h3 id=&quot;继承&quot;&gt;&lt;a href=&quot;#继承&quot; class=&quot;headerlink&quot; title=&quot;继承&quot;&gt;&lt;/a&gt;继承&lt;/h3&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;ECMA-262把对象定义为：”无序属性的集合，其属性可以包含基本值、对象或者函数。”&lt;/p&gt;
-&lt;h2 id=&quot;对象&quot;&gt;&lt;a href=&quot;#对象&quot; class=&quot;headerlink&quot; title=&quot;对象&quot;&gt;&lt;/a&gt;对象&lt;/h2&gt;&lt;h3 id=&quot;属性类型&quot;&gt;&lt;a href=
-    
-    </summary>
-    
-      <category term="编程" scheme="http://www.cherishhsieh.com/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    
-      <category term="Javascript" scheme="http://www.cherishhsieh.com/tags/Javascript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Weui使用</title>
-    <link href="http://www.cherishhsieh.com/2016/05/14/Weui%E4%BD%BF%E7%94%A8/"/>
-    <id>http://www.cherishhsieh.com/2016/05/14/Weui使用/</id>
-    <published>2016-05-14T08:49:13.000Z</published>
-    <updated>2016-05-23T06:58:36.820Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="前端" scheme="http://www.cherishhsieh.com/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="Css Html" scheme="http://www.cherishhsieh.com/tags/Css-Html/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ES2015 总结</title>
-    <link href="http://www.cherishhsieh.com/2016/05/12/ES2015-%E6%80%BB%E7%BB%93/"/>
-    <id>http://www.cherishhsieh.com/2016/05/12/ES2015-总结/</id>
-    <published>2016-05-12T10:34:05.000Z</published>
-    <updated>2016-05-23T06:56:16.780Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="编程" scheme="http://www.cherishhsieh.com/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    
-      <category term="Javascript" scheme="http://www.cherishhsieh.com/tags/Javascript/"/>
     
   </entry>
   

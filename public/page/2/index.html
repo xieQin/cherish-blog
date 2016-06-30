@@ -57,15 +57,15 @@
 
   
   
-    <h3 class="article-title"><a href="/2016/06/15/React学习总结/"><span>React学习总结</span></a></h3>
+    <h3 class="article-title"><a href="/2015/10/23/Markdown语法总结/"><span>Markdown语法总结</span></a></h3>
   
 
 
   <div class="article-top-meta">
     <span class="posted-on">
-      <a href="/2016/06/15/React学习总结/" rel="bookmark">
-        <time class="entry-date published" datetime="2016-06-15T07:01:07.000Z">
-          2016-06-15
+      <a href="/2015/10/23/Markdown语法总结/" rel="bookmark">
+        <time class="entry-date published" datetime="2015-10-23T05:45:12.000Z">
+          2015-10-23
         </time>
       </a>
     </span>
@@ -77,86 +77,50 @@
   <div class="article-content">
     <div class="entry">
       
-        
-      
-    </div>
-    <footer class="article-footer">
-        <div class="article-meta pull-left">
-          
-          
-        </div>
-        
-        <div class="article-meta pull-right">
-          <span>
-            <i class="icon-comments"></i>
-            <span>
-              <a href="http://www.cherishhsieh.com/2016/06/15/React学习总结/#comment">评论</a>
-            </span>
-          </span>
-        </div>
-        
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post article">
-
-  
-  
-    <h3 class="article-title"><a href="/2016/06/14/Eslint使用备查/"><span>ESLint使用备查</span></a></h3>
-  
-
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2016/06/14/Eslint使用备查/" rel="bookmark">
-        <time class="entry-date published" datetime="2016-06-14T03:48:43.000Z">
-          2016-06-14
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        <p>ESLint是以可扩展、每条规则独立、不内置编码风格为理念的lint工具</p>
-<h3 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g eslint</span><br></pre></td></tr></table></figure>
-<h3 id="2-使用"><a href="#2-使用" class="headerlink" title="2. 使用"></a>2. 使用</h3><p>在项目目录下输入</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">eslint --init</span><br></pre></td></tr></table></figure>
-<p>之后便可以对项目下的任何js文件使用ESLnt，如<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">eslint test.js <span class="built_in">test</span>2.js</span><br></pre></td></tr></table></figure></p>
-<h3 id="3-使用要点"><a href="#3-使用要点" class="headerlink" title="3. 使用要点"></a>3. 使用要点</h3><h4 id="3-1-配置"><a href="#3-1-配置" class="headerlink" title="3.1 配置"></a>3.1 配置</h4><p>可使用三种方式配置ESLint：</p>
+        <h2 id="特殊字符自动转换"><a href="#特殊字符自动转换" class="headerlink" title="特殊字符自动转换"></a>特殊字符自动转换</h2><hr>
+<blockquote>
+<p>&amp;字符<br>&lt;字符</p>
+</blockquote>
+<h2 id="区块元素"><a href="#区块元素" class="headerlink" title="区块元素"></a>区块元素</h2><hr>
 <ul>
-<li>使用 <code>.eslintrc</code> 文件（可通过<code>eslint --init</code>生成）</li>
-<li>在 <code>package.json</code> 文件内添加 <code>eslintConfig</code> 配置块</li>
-<li>在代码文件中定义</li>
+<li><p>段落和换行</p>
+</li>
+<li><p>标题</p>
+</li>
 </ul>
-<h6 id="3-1-1-eslintrc-示例"><a href="#3-1-1-eslintrc-示例" class="headerlink" title="3.1.1 .eslintrc 示例"></a>3.1.1 <code>.eslintrc</code> 示例</h6><p>项目根目录的 <code>.eslintrc</code> 文件会应用到整个项目，子目录中如果也包含 <code>.eslintrc</code> 文件则会忽略根目录中的配置</p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"env"</span>: &#123;</span><br><span class="line">    <span class="attr">"browser"</span>: <span class="literal">true</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">"globals"</span>: &#123;</span><br><span class="line">    <span class="attr">"angular"</span>: <span class="literal">true</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">"rules"</span>: &#123;</span><br><span class="line">    <span class="attr">"camelcase"</span>: <span class="number">2</span>,</span><br><span class="line">    <span class="attr">"curly"</span>: <span class="number">2</span>,</span><br><span class="line">    <span class="attr">"brace-style"</span>: [<span class="number">2</span>, <span class="string">"1tbs"</span>],</span><br><span class="line">    <span class="attr">"quotes"</span>: [<span class="number">2</span>, <span class="string">"single"</span>],</span><br><span class="line">    <span class="attr">"semi"</span>: [<span class="number">2</span>, <span class="string">"always"</span>],</span><br><span class="line">    <span class="attr">"space-in-brackets"</span>: [<span class="number">2</span>, <span class="string">"never"</span>],</span><br><span class="line">    <span class="attr">"space-infix-ops"</span>: <span class="number">2</span>,</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h6 id="3-1-2-package-json-示例"><a href="#3-1-2-package-json-示例" class="headerlink" title="3.1.2 package.json 示例"></a>3.1.2 <code>package.json</code> 示例</h6><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"name"</span>: <span class="string">"mypackage"</span>,</span><br><span class="line">  <span class="attr">"version"</span>: <span class="string">"0.0.1"</span>,</span><br><span class="line">  <span class="attr">"eslintConfig"</span>: &#123;</span><br><span class="line">    <span class="attr">"env"</span>: &#123;</span><br><span class="line">      <span class="attr">"browser"</span>: <span class="literal">true</span>,</span><br><span class="line">      <span class="attr">"node"</span>: <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h6 id="3-1-3-文件内配置"><a href="#3-1-3-文件内配置" class="headerlink" title="3.1.3 文件内配置"></a>3.1.3 文件内配置</h6><p>代码文件内的配置会覆盖配置文件中的规则</p>
+<blockquote>
+<p>类Setext形式<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">This is an H1</span><br><span class="line">=============</span><br><span class="line">This is an H2</span><br><span class="line">=============</span><br></pre></td></tr></table></figure></p>
+<p>类Atx形式<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 这是H1</span></span><br><span class="line"><span class="comment">## 这是H2</span></span><br></pre></td></tr></table></figure></p>
+</blockquote>
 <ul>
-<li><p>禁用ESLint:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* eslint-disable */</span></span><br><span class="line"><span class="keyword">var</span> obj = &#123; key: <span class="string">'value'</span>, &#125;;</span><br><span class="line"><span class="comment">/* eslint-enable */</span></span><br></pre></td></tr></table></figure>
+<li><p>区块引用</p>
 </li>
-<li><p>禁用一条规则</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*eslint-disable no-alert */</span></span><br><span class="line">alert(<span class="string">'doing awful things'</span>);</span><br><span class="line"><span class="comment">/* eslint-enable no-alert */</span></span><br></pre></td></tr></table></figure>
+<li><p>代码区块</p>
 </li>
-</ul>
-<h4 id="3-2-工作流集成"><a href="#3-2-工作流集成" class="headerlink" title="3.2 工作流集成"></a>3.2 工作流集成</h4><ul>
-<li><p>在Gulp中使用</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">'gulp'</span>);</span><br><span class="line"><span class="keyword">var</span> eslint = <span class="built_in">require</span>(<span class="string">'gulp-eslint'</span>);</span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">'lint'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'client/app/**/*.js'</span>)</span><br><span class="line">    .pipe(eslint())</span><br><span class="line">    .pipe(eslint.format());</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>在Webpack中使用</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> path = <span class="built_in">require</span>(<span class="string">'path'</span>)</span><br><span class="line"><span class="keyword">var</span> webpack = <span class="built_in">require</span>(<span class="string">'webpack'</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  devtool: <span class="string">'cheap-module-eval-source-map'</span>,</span><br><span class="line">  entry: [</span><br><span class="line">    <span class="string">'webpack-hot-middleware/client?noInfo=true&amp;reload=true'</span>,</span><br><span class="line">    <span class="string">'./index'</span></span><br><span class="line">  ],</span><br><span class="line">  output: &#123;</span><br><span class="line">    path: path.join(__dirname, <span class="string">'dist'</span>),</span><br><span class="line">    filename: <span class="string">'bundle.js'</span>,</span><br><span class="line">    publicPath: <span class="string">'/static/'</span></span><br><span class="line">  &#125;,</span><br><span class="line">  plugins: [</span><br><span class="line">    <span class="keyword">new</span> webpack.optimize.OccurenceOrderPlugin(),</span><br><span class="line">    <span class="keyword">new</span> webpack.HotModuleReplacementPlugin()</span><br><span class="line">  ],</span><br><span class="line">  <span class="built_in">module</span>: &#123;</span><br><span class="line">    loaders: [</span><br><span class="line">      &#123;</span><br><span class="line">        test: <span class="regexp">/\.js$/</span>,</span><br><span class="line">        loaders: [<span class="string">'babel'</span>, <span class="string">'eslint'</span>],</span><br><span class="line">        exclude: <span class="regexp">/node_modules/</span>,</span><br><span class="line">        include: __dirname</span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li><p>分割线</p>
 </li>
 </ul>
-<h3 id="4-配置规则"><a href="#4-配置规则" class="headerlink" title="4. 配置规则"></a>4. 配置规则</h3><p><a href="http://eslint.org/docs/user-guide/configuring" target="_blank" rel="external">Configuring ESLint</a></p>
+<h2 id="区段元素"><a href="#区段元素" class="headerlink" title="区段元素"></a>区段元素</h2><hr>
+<ul>
+<li><p>链接<br>这是<a href="http://www.cherishhsieh.com">我的blog</a></p>
+</li>
+<li><p>强调<br><strong>文本区域</strong></p>
+</li>
+<li><p>代码<br>Use the <code>printf()</code> function</p>
+</li>
+<li><p>图片<br><img src="https://avatars2.githubusercontent.com/u/6762420?v=3&amp;s=460" alt="Alt text"></p>
+</li>
+</ul>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><hr>
+<ul>
+<li><p>自动链接<br><a href="http://www.cherishhsieh.com">http://www.cherishhsieh.com</a><br><a href="&#x6d;&#97;&#x69;&#x6c;&#x74;&#111;&#x3a;&#120;&#x69;&#x65;&#113;&#105;&#110;&#49;&#57;&#57;&#49;&#64;&#103;&#x6d;&#97;&#x69;&#108;&#46;&#99;&#x6f;&#109;">&#120;&#x69;&#x65;&#113;&#105;&#110;&#49;&#57;&#57;&#49;&#64;&#103;&#x6d;&#97;&#x69;&#108;&#46;&#99;&#x6f;&#109;</a></p>
+</li>
+<li><p>反斜杠<br>*literal asterisks*</p>
+<blockquote>
+<p>\   反斜线<br>`   反引号<br>*   星号<br>_   底线<br>{}  花括号<br>[]  方括号<br>()  括弧<br>#   井字号<br>+   加号<br>-   减号<br>.   英文句点<br>!   惊叹号</p>
+</blockquote>
+</li>
+</ul>
 
       
     </div>
@@ -167,7 +131,7 @@
 
   <span class="post-categories">
     <i class="icon-categories"></i>
-    <a href="/categories/前端/">前端</a>
+    <a href="/categories/Markdown/">Markdown</a>
   </span>
 
 
@@ -176,7 +140,7 @@
 
   <span class="post-tags">
     <i class="icon-tags"></i>
-    <a href="/tags/Eslint/">Eslint</a>
+    <a href="/tags/Markdown/">Markdown</a>
   </span>
 
 
@@ -186,7 +150,7 @@
           <span>
             <i class="icon-comments"></i>
             <span>
-              <a href="http://www.cherishhsieh.com/2016/06/14/Eslint使用备查/#comment">评论</a>
+              <a href="http://www.cherishhsieh.com/2015/10/23/Markdown语法总结/#comment">评论</a>
             </span>
           </span>
         </div>
@@ -201,15 +165,15 @@
 
   
   
-    <h3 class="article-title"><a href="/2016/06/07/Javascript事件/"><span>Javascript事件</span></a></h3>
+    <h3 class="article-title"><a href="/2015/09/09/Vue/"><span>Vue.js</span></a></h3>
   
 
 
   <div class="article-top-meta">
     <span class="posted-on">
-      <a href="/2016/06/07/Javascript事件/" rel="bookmark">
-        <time class="entry-date published" datetime="2016-06-07T02:16:30.000Z">
-          2016-06-07
+      <a href="/2015/09/09/Vue/" rel="bookmark">
+        <time class="entry-date published" datetime="2015-09-09T09:46:23.000Z">
+          2015-09-09
         </time>
       </a>
     </span>
@@ -221,29 +185,7 @@
   <div class="article-content">
     <div class="entry">
       
-        <h2 id="1-事件流"><a href="#1-事件流" class="headerlink" title="1. 事件流"></a>1. 事件流</h2><p>事件流描述的是从页面中接收事件的顺序</p>
-<h4 id="1-1-事件冒泡"><a href="#1-1-事件冒泡" class="headerlink" title="1.1 事件冒泡"></a>1.1 事件冒泡</h4><p>IE的事件流：事件冒泡（event bubbling），即事件开始时由最具体的元素（文档中嵌套层次最深的那个节点）接收，然后逐级向上传播到较为不具体的节点（文档）</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>Event Bubbling Example<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"myDiv"</span>&gt;</span>Click Me<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>点击页面中的<code>&lt;div&gt;</code>元素，那么click事件会按照如下顺序传播：</p>
-<ol>
-<li><code>&lt;div&gt;</code></li>
-<li><code>&lt;body&gt;</code></li>
-<li><code>&lt;html&gt;</code></li>
-<li><code>document</code></li>
-</ol>
-<h4 id="1-2-事件捕获"><a href="#1-2-事件捕获" class="headerlink" title="1.2 事件捕获"></a>1.2 事件捕获</h4><p>事件捕获的思想是不太具体的节点应该更早接收到事件，而最具体的节点应该最后接收到事件。<br>事件捕获的用意在于在事件到达预定目标之前捕获它。</p>
-<p>点击页面中的<code>&lt;div&gt;</code>元素，click事件会按照如下顺序传播：</p>
-<ol>
-<li><code>document</code></li>
-<li><code>&lt;html&gt;</code></li>
-<li><code>&lt;body&gt;</code></li>
-<li><code>&lt;div&gt;</code></li>
-</ol>
-<h4 id="1-2-DOM事件流"><a href="#1-2-DOM事件流" class="headerlink" title="1.2 DOM事件流"></a>1.2 DOM事件流</h4><p>“DOM2级事件”规定的事件流包括三个阶段：事件捕获阶段、处于目标阶段和事件冒泡阶段</p>
-<p><img src="http://img1.zsgjs.com/upfile/file/2016/0615/7644326177bdc141c1b2b85d4575d528.png" alt="Alt text"></p>
-<h2 id="2-事件处理程序"><a href="#2-事件处理程序" class="headerlink" title="2. 事件处理程序"></a>2. 事件处理程序</h2><p>响应某个事件的函数就是事件处理程序，或事件侦听器</p>
-<h4 id="2-1-HTML事件处理程序"><a href="#2-1-HTML事件处理程序" class="headerlink" title="2.1 HTML事件处理程序"></a>2.1 HTML事件处理程序</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">name</span>=<span class="string">"btn"</span> <span class="attr">onclick</span>=<span class="string">"alert('Clicked')"</span> <span class="attr">value</span>=<span class="string">"Click Me"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
-<h4 id="2-2-DOM-0级事件处理程序"><a href="#2-2-DOM-0级事件处理程序" class="headerlink" title="2.2 DOM 0级事件处理程序"></a>2.2 DOM 0级事件处理程序</h4>
+        
       
     </div>
     <footer class="article-footer">
@@ -253,7 +195,7 @@
 
   <span class="post-categories">
     <i class="icon-categories"></i>
-    <a href="/categories/编程/">编程</a>
+    <a href="/categories/Javascript/">Javascript</a>
   </span>
 
 
@@ -262,7 +204,7 @@
 
   <span class="post-tags">
     <i class="icon-tags"></i>
-    <a href="/tags/Javascript/">Javascript</a>
+    <a href="/tags/Vue/">Vue</a>
   </span>
 
 
@@ -272,7 +214,7 @@
           <span>
             <i class="icon-comments"></i>
             <span>
-              <a href="http://www.cherishhsieh.com/2016/06/07/Javascript事件/#comment">评论</a>
+              <a href="http://www.cherishhsieh.com/2015/09/09/Vue/#comment">评论</a>
             </span>
           </span>
         </div>
@@ -287,15 +229,205 @@
 
   
   
-    <h3 class="article-title"><a href="/2016/06/04/客户端检测/"><span>客户端检测</span></a></h3>
+    <h3 class="article-title"><a href="/2015/08/30/Jquery源码阅读-二/"><span>Jquery源码阅读(二)</span></a></h3>
   
 
 
   <div class="article-top-meta">
     <span class="posted-on">
-      <a href="/2016/06/04/客户端检测/" rel="bookmark">
-        <time class="entry-date published" datetime="2016-06-04T05:36:19.000Z">
-          2016-06-04
+      <a href="/2015/08/30/Jquery源码阅读-二/" rel="bookmark">
+        <time class="entry-date published" datetime="2015-08-30T09:27:53.000Z">
+          2015-08-30
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+        <div class="article-meta pull-left">
+          
+          
+        </div>
+        
+        <div class="article-meta pull-right">
+          <span>
+            <i class="icon-comments"></i>
+            <span>
+              <a href="http://www.cherishhsieh.com/2015/08/30/Jquery源码阅读-二/#comment">评论</a>
+            </span>
+          </span>
+        </div>
+        
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post article">
+
+  
+  
+    <h3 class="article-title"><a href="/2015/08/21/Jquery源码阅读/"><span>Jquery源码阅读</span></a></h3>
+  
+
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2015/08/21/Jquery源码阅读/" rel="bookmark">
+        <time class="entry-date published" datetime="2015-08-21T06:25:18.000Z">
+          2015-08-21
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <blockquote>
+<p>jQuery 版本：2.0.3<br>jQuery 源码学习笔记：</p>
+</blockquote>
+<h1 id="1-整体架构"><a href="#1-整体架构" class="headerlink" title="1. 整体架构"></a>1. 整体架构</h1><p>Jquey的核心是从HTML文档中匹配元素后执行操作<br>如：</p>
+<blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$(selector).append(html)</span><br><span class="line">$(selector).html(html).css()</span><br></pre></td></tr></table></figure>
+</blockquote>
+<p>具体步骤可分为:</p>
+<ul>
+<li><p>构造jQuery对象</p>
+</li>
+<li><p>调用jQuery方法</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+        <div class="article-meta pull-left">
+          
+  
+
+  <span class="post-categories">
+    <i class="icon-categories"></i>
+    <a href="/categories/JavaScript/">JavaScript</a>
+  </span>
+
+
+          
+  
+
+  <span class="post-tags">
+    <i class="icon-tags"></i>
+    <a href="/tags/Jquery/">Jquery</a>
+  </span>
+
+
+        </div>
+        
+        <div class="article-meta pull-right">
+          <span>
+            <i class="icon-comments"></i>
+            <span>
+              <a href="http://www.cherishhsieh.com/2015/08/21/Jquery源码阅读/#comment">评论</a>
+            </span>
+          </span>
+        </div>
+        
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post article">
+
+  
+  
+    <h3 class="article-title"><a href="/2015/07/25/使用nodejs搭建web服务器/"><span>使用nodejs搭建web服务器</span></a></h3>
+  
+
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2015/07/25/使用nodejs搭建web服务器/" rel="bookmark">
+        <time class="entry-date published" datetime="2015-07-25T05:52:41.000Z">
+          2015-07-25
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+        <div class="article-meta pull-left">
+          
+  
+
+  <span class="post-categories">
+    <i class="icon-categories"></i>
+    <a href="/categories/Nodejs/">Nodejs</a>
+  </span>
+
+
+          
+  
+
+  <span class="post-tags">
+    <i class="icon-tags"></i>
+    <a href="/tags/Nodejs/">Nodejs</a>
+  </span>
+
+
+        </div>
+        
+        <div class="article-meta pull-right">
+          <span>
+            <i class="icon-comments"></i>
+            <span>
+              <a href="http://www.cherishhsieh.com/2015/07/25/使用nodejs搭建web服务器/#comment">评论</a>
+            </span>
+          </span>
+        </div>
+        
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post article">
+
+  
+  
+    <h3 class="article-title"><a href="/2015/06/04/客户端检测/"><span>客户端检测</span></a></h3>
+  
+
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2015/06/04/客户端检测/" rel="bookmark">
+        <time class="entry-date published" datetime="2015-06-04T05:36:19.000Z">
+          2015-06-04
         </time>
       </a>
     </span>
@@ -352,7 +484,7 @@
           <span>
             <i class="icon-comments"></i>
             <span>
-              <a href="http://www.cherishhsieh.com/2016/06/04/客户端检测/#comment">评论</a>
+              <a href="http://www.cherishhsieh.com/2015/06/04/客户端检测/#comment">评论</a>
             </span>
           </span>
         </div>
@@ -367,15 +499,148 @@
 
   
   
-    <h3 class="article-title"><a href="/2016/06/04/Touch手势/"><span>Touch手势</span></a></h3>
+    <h3 class="article-title"><a href="/2015/05/23/Javascript面向对象编程/"><span>Javascript面向对象编程</span></a></h3>
   
 
 
   <div class="article-top-meta">
     <span class="posted-on">
-      <a href="/2016/06/04/Touch手势/" rel="bookmark">
-        <time class="entry-date published" datetime="2016-06-04T03:18:54.000Z">
-          2016-06-04
+      <a href="/2015/05/23/Javascript面向对象编程/" rel="bookmark">
+        <time class="entry-date published" datetime="2015-05-23T05:42:42.000Z">
+          2015-05-23
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p>ECMA-262把对象定义为：”无序属性的集合，其属性可以包含基本值、对象或者函数。”</p>
+<h2 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h2><h3 id="属性类型"><a href="#属性类型" class="headerlink" title="属性类型"></a>属性类型</h3><ul>
+<li>数据属性</li>
+<li>访问器属性</li>
+</ul>
+<h5 id="定义多个属性"><a href="#定义多个属性" class="headerlink" title="定义多个属性"></a>定义多个属性</h5><h5 id="读取属性的特性"><a href="#读取属性的特性" class="headerlink" title="读取属性的特性"></a>读取属性的特性</h5><h3 id="创建对象"><a href="#创建对象" class="headerlink" title="创建对象"></a>创建对象</h3><h5 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h5><h5 id="原型模式"><a href="#原型模式" class="headerlink" title="原型模式"></a>原型模式</h5><h5 id="组合使用构造函数模式和原型模式"><a href="#组合使用构造函数模式和原型模式" class="headerlink" title="组合使用构造函数模式和原型模式"></a>组合使用构造函数模式和原型模式</h5><h5 id="动态原型模式"><a href="#动态原型模式" class="headerlink" title="动态原型模式"></a>动态原型模式</h5><h5 id="寄生构造函数模式"><a href="#寄生构造函数模式" class="headerlink" title="寄生构造函数模式"></a>寄生构造函数模式</h5><h5 id="稳妥构造函数模式"><a href="#稳妥构造函数模式" class="headerlink" title="稳妥构造函数模式"></a>稳妥构造函数模式</h5><h3 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h3>
+      
+    </div>
+    <footer class="article-footer">
+        <div class="article-meta pull-left">
+          
+  
+
+  <span class="post-categories">
+    <i class="icon-categories"></i>
+    <a href="/categories/编程/">编程</a>
+  </span>
+
+
+          
+  
+
+  <span class="post-tags">
+    <i class="icon-tags"></i>
+    <a href="/tags/Javascript/">Javascript</a>
+  </span>
+
+
+        </div>
+        
+        <div class="article-meta pull-right">
+          <span>
+            <i class="icon-comments"></i>
+            <span>
+              <a href="http://www.cherishhsieh.com/2015/05/23/Javascript面向对象编程/#comment">评论</a>
+            </span>
+          </span>
+        </div>
+        
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post article">
+
+  
+  
+    <h3 class="article-title"><a href="/2015/04/10/Javascript-继承/"><span>Javascript 继承</span></a></h3>
+  
+
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2015/04/10/Javascript-继承/" rel="bookmark">
+        <time class="entry-date published" datetime="2015-04-10T08:50:46.000Z">
+          2015-04-10
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <h1 id="Javascript继承"><a href="#Javascript继承" class="headerlink" title="Javascript继承"></a>Javascript继承</h1>
+      
+    </div>
+    <footer class="article-footer">
+        <div class="article-meta pull-left">
+          
+  
+
+  <span class="post-categories">
+    <i class="icon-categories"></i>
+    <a href="/categories/编程/">编程</a>
+  </span>
+
+
+          
+  
+
+  <span class="post-tags">
+    <i class="icon-tags"></i>
+    <a href="/tags/Javascript/">Javascript</a>
+  </span>
+
+
+        </div>
+        
+        <div class="article-meta pull-right">
+          <span>
+            <i class="icon-comments"></i>
+            <span>
+              <a href="http://www.cherishhsieh.com/2015/04/10/Javascript-继承/#comment">评论</a>
+            </span>
+          </span>
+        </div>
+        
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post article">
+
+  
+  
+    <h3 class="article-title"><a href="/2015/04/04/Touch手势/"><span>Touch手势</span></a></h3>
+  
+
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2015/04/04/Touch手势/" rel="bookmark">
+        <time class="entry-date published" datetime="2015-04-04T03:18:54.000Z">
+          2015-04-04
         </time>
       </a>
     </span>
@@ -434,7 +699,7 @@
           <span>
             <i class="icon-comments"></i>
             <span>
-              <a href="http://www.cherishhsieh.com/2016/06/04/Touch手势/#comment">评论</a>
+              <a href="http://www.cherishhsieh.com/2015/04/04/Touch手势/#comment">评论</a>
             </span>
           </span>
         </div>
@@ -449,15 +714,15 @@
 
   
   
-    <h3 class="article-title"><a href="/2016/05/25/点击事件绑定/"><span>点击事件绑定</span></a></h3>
+    <h3 class="article-title"><a href="/2015/03/25/点击事件绑定/"><span>点击事件绑定</span></a></h3>
   
 
 
   <div class="article-top-meta">
     <span class="posted-on">
-      <a href="/2016/05/25/点击事件绑定/" rel="bookmark">
-        <time class="entry-date published" datetime="2016-05-25T10:59:53.000Z">
-          2016-05-25
+      <a href="/2015/03/25/点击事件绑定/" rel="bookmark">
+        <time class="entry-date published" datetime="2015-03-25T10:59:53.000Z">
+          2015-03-25
         </time>
       </a>
     </span>
@@ -505,312 +770,7 @@
           <span>
             <i class="icon-comments"></i>
             <span>
-              <a href="http://www.cherishhsieh.com/2016/05/25/点击事件绑定/#comment">评论</a>
-            </span>
-          </span>
-        </div>
-        
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post article">
-
-  
-  
-    <h3 class="article-title"><a href="/2016/05/23/Markdown语法总结/"><span>Markdown语法总结</span></a></h3>
-  
-
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2016/05/23/Markdown语法总结/" rel="bookmark">
-        <time class="entry-date published" datetime="2016-05-23T05:45:12.000Z">
-          2016-05-23
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        <h2 id="特殊字符自动转换"><a href="#特殊字符自动转换" class="headerlink" title="特殊字符自动转换"></a>特殊字符自动转换</h2><hr>
-<blockquote>
-<p>&amp;字符<br>&lt;字符</p>
-</blockquote>
-<h2 id="区块元素"><a href="#区块元素" class="headerlink" title="区块元素"></a>区块元素</h2><hr>
-<ul>
-<li><p>段落和换行</p>
-</li>
-<li><p>标题</p>
-</li>
-</ul>
-<blockquote>
-<p>类Setext形式<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">This is an H1</span><br><span class="line">=============</span><br><span class="line">This is an H2</span><br><span class="line">=============</span><br></pre></td></tr></table></figure></p>
-<p>类Atx形式<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 这是H1</span></span><br><span class="line"><span class="comment">## 这是H2</span></span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<ul>
-<li><p>区块引用</p>
-</li>
-<li><p>代码区块</p>
-</li>
-<li><p>分割线</p>
-</li>
-</ul>
-<h2 id="区段元素"><a href="#区段元素" class="headerlink" title="区段元素"></a>区段元素</h2><hr>
-<ul>
-<li><p>链接<br>这是<a href="http://www.cherishhsieh.com">我的blog</a></p>
-</li>
-<li><p>强调<br><strong>文本区域</strong></p>
-</li>
-<li><p>代码<br>Use the <code>printf()</code> function</p>
-</li>
-<li><p>图片<br><img src="https://avatars2.githubusercontent.com/u/6762420?v=3&amp;s=460" alt="Alt text"></p>
-</li>
-</ul>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><hr>
-<ul>
-<li><p>自动链接<br><a href="http://www.cherishhsieh.com">http://www.cherishhsieh.com</a><br><a href="&#109;&#97;&#105;&#x6c;&#x74;&#111;&#58;&#120;&#105;&#x65;&#x71;&#105;&#110;&#x31;&#x39;&#x39;&#x31;&#x40;&#x67;&#109;&#x61;&#105;&#x6c;&#46;&#x63;&#111;&#x6d;">&#120;&#105;&#x65;&#x71;&#105;&#110;&#x31;&#x39;&#x39;&#x31;&#x40;&#x67;&#109;&#x61;&#105;&#x6c;&#46;&#x63;&#111;&#x6d;</a></p>
-</li>
-<li><p>反斜杠<br>*literal asterisks*</p>
-<blockquote>
-<p>\   反斜线<br>`   反引号<br>*   星号<br>_   底线<br>{}  花括号<br>[]  方括号<br>()  括弧<br>#   井字号<br>+   加号<br>-   减号<br>.   英文句点<br>!   惊叹号</p>
-</blockquote>
-</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-        <div class="article-meta pull-left">
-          
-  
-
-  <span class="post-categories">
-    <i class="icon-categories"></i>
-    <a href="/categories/Markdown/">Markdown</a>
-  </span>
-
-
-          
-  
-
-  <span class="post-tags">
-    <i class="icon-tags"></i>
-    <a href="/tags/Markdown/">Markdown</a>
-  </span>
-
-
-        </div>
-        
-        <div class="article-meta pull-right">
-          <span>
-            <i class="icon-comments"></i>
-            <span>
-              <a href="http://www.cherishhsieh.com/2016/05/23/Markdown语法总结/#comment">评论</a>
-            </span>
-          </span>
-        </div>
-        
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post article">
-
-  
-  
-    <h3 class="article-title"><a href="/2016/05/23/Javascript面向对象编程/"><span>Javascript面向对象编程</span></a></h3>
-  
-
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2016/05/23/Javascript面向对象编程/" rel="bookmark">
-        <time class="entry-date published" datetime="2016-05-23T05:42:42.000Z">
-          2016-05-23
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        <p>ECMA-262把对象定义为：”无序属性的集合，其属性可以包含基本值、对象或者函数。”</p>
-<h2 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h2><h3 id="属性类型"><a href="#属性类型" class="headerlink" title="属性类型"></a>属性类型</h3><ul>
-<li>数据属性</li>
-<li>访问器属性</li>
-</ul>
-<h5 id="定义多个属性"><a href="#定义多个属性" class="headerlink" title="定义多个属性"></a>定义多个属性</h5><h5 id="读取属性的特性"><a href="#读取属性的特性" class="headerlink" title="读取属性的特性"></a>读取属性的特性</h5><h3 id="创建对象"><a href="#创建对象" class="headerlink" title="创建对象"></a>创建对象</h3><h5 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h5><h5 id="原型模式"><a href="#原型模式" class="headerlink" title="原型模式"></a>原型模式</h5><h5 id="组合使用构造函数模式和原型模式"><a href="#组合使用构造函数模式和原型模式" class="headerlink" title="组合使用构造函数模式和原型模式"></a>组合使用构造函数模式和原型模式</h5><h5 id="动态原型模式"><a href="#动态原型模式" class="headerlink" title="动态原型模式"></a>动态原型模式</h5><h5 id="寄生构造函数模式"><a href="#寄生构造函数模式" class="headerlink" title="寄生构造函数模式"></a>寄生构造函数模式</h5><h5 id="稳妥构造函数模式"><a href="#稳妥构造函数模式" class="headerlink" title="稳妥构造函数模式"></a>稳妥构造函数模式</h5><h3 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h3>
-      
-    </div>
-    <footer class="article-footer">
-        <div class="article-meta pull-left">
-          
-  
-
-  <span class="post-categories">
-    <i class="icon-categories"></i>
-    <a href="/categories/编程/">编程</a>
-  </span>
-
-
-          
-  
-
-  <span class="post-tags">
-    <i class="icon-tags"></i>
-    <a href="/tags/Javascript/">Javascript</a>
-  </span>
-
-
-        </div>
-        
-        <div class="article-meta pull-right">
-          <span>
-            <i class="icon-comments"></i>
-            <span>
-              <a href="http://www.cherishhsieh.com/2016/05/23/Javascript面向对象编程/#comment">评论</a>
-            </span>
-          </span>
-        </div>
-        
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post article">
-
-  
-  
-    <h3 class="article-title"><a href="/2016/05/14/Weui使用/"><span>Weui使用</span></a></h3>
-  
-
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2016/05/14/Weui使用/" rel="bookmark">
-        <time class="entry-date published" datetime="2016-05-14T08:49:13.000Z">
-          2016-05-14
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-        <div class="article-meta pull-left">
-          
-  
-
-  <span class="post-categories">
-    <i class="icon-categories"></i>
-    <a href="/categories/前端/">前端</a>
-  </span>
-
-
-          
-  
-
-  <span class="post-tags">
-    <i class="icon-tags"></i>
-    <a href="/tags/Css-Html/">Css Html</a>
-  </span>
-
-
-        </div>
-        
-        <div class="article-meta pull-right">
-          <span>
-            <i class="icon-comments"></i>
-            <span>
-              <a href="http://www.cherishhsieh.com/2016/05/14/Weui使用/#comment">评论</a>
-            </span>
-          </span>
-        </div>
-        
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post article">
-
-  
-  
-    <h3 class="article-title"><a href="/2016/05/12/ES2015-总结/"><span>ES2015 总结</span></a></h3>
-  
-
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2016/05/12/ES2015-总结/" rel="bookmark">
-        <time class="entry-date published" datetime="2016-05-12T10:34:05.000Z">
-          2016-05-12
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-        <div class="article-meta pull-left">
-          
-  
-
-  <span class="post-categories">
-    <i class="icon-categories"></i>
-    <a href="/categories/编程/">编程</a>
-  </span>
-
-
-          
-  
-
-  <span class="post-tags">
-    <i class="icon-tags"></i>
-    <a href="/tags/Javascript/">Javascript</a>
-  </span>
-
-
-        </div>
-        
-        <div class="article-meta pull-right">
-          <span>
-            <i class="icon-comments"></i>
-            <span>
-              <a href="http://www.cherishhsieh.com/2016/05/12/ES2015-总结/#comment">评论</a>
+              <a href="http://www.cherishhsieh.com/2015/03/25/点击事件绑定/#comment">评论</a>
             </span>
           </span>
         </div>
