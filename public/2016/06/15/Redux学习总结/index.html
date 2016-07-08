@@ -76,7 +76,50 @@
   <div class="article-content">
     <div class="entry">
       
-        
+        <p><img src="https://camo.githubusercontent.com/76224d874f32535aa62c0cd01750fb71fb02cf53/687474703a2f2f70362e7168696d672e636f6d2f642f696e6e2f39613331326463632f7265647578466c6f772e706e67" alt="Redux流程图"></p>
+<p>从Redux的流程图来看，redux的整体思想还是不难理解的<br>只是当遇到各种为了同构而设计得较为繁琐的API、为了相对高效率地获得状态树的局部状态而引入的第三方库时，<br>难免有些地方迷糊<br>因此总结一下学习中的要点，备查</p>
+<p><a href="https://github.com/happypoulp/redux-tutorial" target="_blank" rel="external">推荐教程</a><br><a href="http://redux.js.org/" target="_blank" rel="external">文档</a></p>
+<h1 id="1-Redux"><a href="#1-Redux" class="headerlink" title="1. Redux"></a>1. Redux</h1><p>Redux主要特点：</p>
+<ul>
+<li>state以单一对象存储在store对象中</li>
+<li>state只读，state变化时应返回新的state而不是更新原state</li>
+<li>使用纯函数reducer执行state更新</li>
+</ul>
+<blockquote>
+<p>state 为单一对象，使得 Redux 只需要维护一棵状态树，服务端很容易初始化状态，易于服务器渲染。state 只能通过 dispatch(action) 来触发更新，更新逻辑由 reducer 来执行</p>
+</blockquote>
+<h2 id="1-1-Action"><a href="#1-1-Action" class="headerlink" title="1.1 Action"></a>1.1 Action</h2><p>action 可以理解为应用向 store 传递的数据信息（一般为用户交互信息）</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">addTodo</span>(<span class="params">text</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">    type: ADD_TODO,</span><br><span class="line">    text,</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">store.dispatch(addTodo(text))</span><br></pre></td></tr></table></figure>
+<p>如果要处理异步 action，需要使用一些中间件。<br>redux-thunks 和 redux-promise 分别是使用异步回调和 Promise 来解决异步 action 的问题</p>
+<h2 id="1-2-Reducer"><a href="#1-2-Reducer" class="headerlink" title="1.2 Reducer"></a>1.2 Reducer</h2><p>更新state的纯函数，用来执行根据指定 action 来更新 state 的逻辑<br><code>(previousState, action) =&gt; newState</code><br><code>combineReducers(reducers)</code> 可以把多个 reducer 合并成一个 root reducer</p>
+<h2 id="1-3-Store"><a href="#1-3-Store" class="headerlink" title="1.3 Store"></a>1.3 Store</h2><p>store 是一个单一对象：</p>
+<ul>
+<li>管理应用的 state</li>
+<li>获取 state <code>store.getState()</code></li>
+<li>触发 state 更新 <code>store.dispatch(action)</code></li>
+<li>注册 state 变化监听器 <code>store.subscribe(listener)</code></li>
+<li>创建store <code>createStore(reducer, [initialState])</code></li>
+</ul>
+<h1 id="2-Middlewares"><a href="#2-Middlewares" class="headerlink" title="2. Middlewares"></a>2. Middlewares</h1><p>dispatch(action) 是一个同步的过程：执行 reducer 更新 state -&gt; 调用 store 的监听处理函数。<br>如果需要在 dispatch 时执行一些异步操作（fetch action data），此时就需要引入 Middleware 解决。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="function"><span class="keyword">function</span> <span class="title">thunkMiddleware</span>(<span class="params">&#123; dispatch, getState &#125;</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> next =&gt; action =&gt;</span><br><span class="line">    <span class="keyword">typeof</span> action === <span class="string">'function'</span> ? action(dispatch, getState) : next(action)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>newDispatch = middleware1(middleware2(...(dispatch)...))</code></p>
+<h1 id="3-react-redux"><a href="#3-react-redux" class="headerlink" title="3. react-redux"></a>3. react-redux</h1><p><a href="http://cn.redux.js.org/docs/react-redux/index.html" target="_blank" rel="external">react-redux 文档</a></p>
+<p>API:</p>
+<ul>
+<li><code>&lt;Provider store&gt;</code></li>
+<li><code>connect([mapStateToProps], [mapDispatchToProps], [mergeProps], [options])</code></li>
+</ul>
+<h1 id="4-总结"><a href="#4-总结" class="headerlink" title="4. 总结"></a>4. 总结</h1><ul>
+<li>action是纯声明式的数据结构，提供事件的所有要素</li>
+<li>reducer是一个匹配函数, 所有的reducer都可以捕捉到action并匹配与自己相关与否，相关就拿走action中的要素进行逻辑处理，修改store中的状态，不相关就不对state做处理原样返回</li>
+<li>store负责存储状态并可以被react api回调，发布action</li>
+<li>react-redux, 提供一个Provider和connect</li>
+<li>Provider是一个普通组件，可以作为顶层app的分发点，传入store属性后，它会将state分发给所有被connect的组件</li>
+<li>connect是一个科里化函数，先接收两个参数（数据绑定mapStateToProps和事件绑定mapDispatchToProps），再接受一个参数（将要绑定的组件本身）</li>
+<li>mapStateToProps：构建好Redux系统的时候，它会被自动初始化，但是你的React组件并不知道它的存在，因此你需要分拣出你需要的Redux状态，所以你需要绑定一个函数，它的参数是state，简单返回你关心的几个值。</li>
+<li>mapDispatchToProps：声明好的action作为回调，也可以被注入到组件里，就是通过这个函数，它的参数是dispatch，通过redux的辅助方法bindActionCreator绑定所有action以及参数的dispatch，就可以作为属性在组件里面作为函数简单使用了，不需要手动dispatch。这个mapDispatchToProps是可选的，如果不传这个参数redux会简单把dispatch作为属性注入给组件，可以手动当做store.dispatch使用。</li>
+</ul>
+
       
     </div>
     <footer class="article-footer">
@@ -143,17 +186,6 @@
 </p>
 </footer>
     
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-56794953-1', 'auto');
-    ga('send', 'pageview');
-
-</script>
-
   </div>
 </div>
 </body>

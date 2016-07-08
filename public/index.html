@@ -77,7 +77,50 @@
   <div class="article-content">
     <div class="entry">
       
-        
+        <p><img src="https://camo.githubusercontent.com/76224d874f32535aa62c0cd01750fb71fb02cf53/687474703a2f2f70362e7168696d672e636f6d2f642f696e6e2f39613331326463632f7265647578466c6f772e706e67" alt="Redux流程图"></p>
+<p>从Redux的流程图来看，redux的整体思想还是不难理解的<br>只是当遇到各种为了同构而设计得较为繁琐的API、为了相对高效率地获得状态树的局部状态而引入的第三方库时，<br>难免有些地方迷糊<br>因此总结一下学习中的要点，备查</p>
+<p><a href="https://github.com/happypoulp/redux-tutorial" target="_blank" rel="external">推荐教程</a><br><a href="http://redux.js.org/" target="_blank" rel="external">文档</a></p>
+<h1 id="1-Redux"><a href="#1-Redux" class="headerlink" title="1. Redux"></a>1. Redux</h1><p>Redux主要特点：</p>
+<ul>
+<li>state以单一对象存储在store对象中</li>
+<li>state只读，state变化时应返回新的state而不是更新原state</li>
+<li>使用纯函数reducer执行state更新</li>
+</ul>
+<blockquote>
+<p>state 为单一对象，使得 Redux 只需要维护一棵状态树，服务端很容易初始化状态，易于服务器渲染。state 只能通过 dispatch(action) 来触发更新，更新逻辑由 reducer 来执行</p>
+</blockquote>
+<h2 id="1-1-Action"><a href="#1-1-Action" class="headerlink" title="1.1 Action"></a>1.1 Action</h2><p>action 可以理解为应用向 store 传递的数据信息（一般为用户交互信息）</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">addTodo</span>(<span class="params">text</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">    type: ADD_TODO,</span><br><span class="line">    text,</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">store.dispatch(addTodo(text))</span><br></pre></td></tr></table></figure>
+<p>如果要处理异步 action，需要使用一些中间件。<br>redux-thunks 和 redux-promise 分别是使用异步回调和 Promise 来解决异步 action 的问题</p>
+<h2 id="1-2-Reducer"><a href="#1-2-Reducer" class="headerlink" title="1.2 Reducer"></a>1.2 Reducer</h2><p>更新state的纯函数，用来执行根据指定 action 来更新 state 的逻辑<br><code>(previousState, action) =&gt; newState</code><br><code>combineReducers(reducers)</code> 可以把多个 reducer 合并成一个 root reducer</p>
+<h2 id="1-3-Store"><a href="#1-3-Store" class="headerlink" title="1.3 Store"></a>1.3 Store</h2><p>store 是一个单一对象：</p>
+<ul>
+<li>管理应用的 state</li>
+<li>获取 state <code>store.getState()</code></li>
+<li>触发 state 更新 <code>store.dispatch(action)</code></li>
+<li>注册 state 变化监听器 <code>store.subscribe(listener)</code></li>
+<li>创建store <code>createStore(reducer, [initialState])</code></li>
+</ul>
+<h1 id="2-Middlewares"><a href="#2-Middlewares" class="headerlink" title="2. Middlewares"></a>2. Middlewares</h1><p>dispatch(action) 是一个同步的过程：执行 reducer 更新 state -&gt; 调用 store 的监听处理函数。<br>如果需要在 dispatch 时执行一些异步操作（fetch action data），此时就需要引入 Middleware 解决。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="function"><span class="keyword">function</span> <span class="title">thunkMiddleware</span>(<span class="params">&#123; dispatch, getState &#125;</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> next =&gt; action =&gt;</span><br><span class="line">    <span class="keyword">typeof</span> action === <span class="string">'function'</span> ? action(dispatch, getState) : next(action)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>newDispatch = middleware1(middleware2(...(dispatch)...))</code></p>
+<h1 id="3-react-redux"><a href="#3-react-redux" class="headerlink" title="3. react-redux"></a>3. react-redux</h1><p><a href="http://cn.redux.js.org/docs/react-redux/index.html" target="_blank" rel="external">react-redux 文档</a></p>
+<p>API:</p>
+<ul>
+<li><code>&lt;Provider store&gt;</code></li>
+<li><code>connect([mapStateToProps], [mapDispatchToProps], [mergeProps], [options])</code></li>
+</ul>
+<h1 id="4-总结"><a href="#4-总结" class="headerlink" title="4. 总结"></a>4. 总结</h1><ul>
+<li>action是纯声明式的数据结构，提供事件的所有要素</li>
+<li>reducer是一个匹配函数, 所有的reducer都可以捕捉到action并匹配与自己相关与否，相关就拿走action中的要素进行逻辑处理，修改store中的状态，不相关就不对state做处理原样返回</li>
+<li>store负责存储状态并可以被react api回调，发布action</li>
+<li>react-redux, 提供一个Provider和connect</li>
+<li>Provider是一个普通组件，可以作为顶层app的分发点，传入store属性后，它会将state分发给所有被connect的组件</li>
+<li>connect是一个科里化函数，先接收两个参数（数据绑定mapStateToProps和事件绑定mapDispatchToProps），再接受一个参数（将要绑定的组件本身）</li>
+<li>mapStateToProps：构建好Redux系统的时候，它会被自动初始化，但是你的React组件并不知道它的存在，因此你需要分拣出你需要的Redux状态，所以你需要绑定一个函数，它的参数是state，简单返回你关心的几个值。</li>
+<li>mapDispatchToProps：声明好的action作为回调，也可以被注入到组件里，就是通过这个函数，它的参数是dispatch，通过redux的辅助方法bindActionCreator绑定所有action以及参数的dispatch，就可以作为属性在组件里面作为函数简单使用了，不需要手动dispatch。这个mapDispatchToProps是可选的，如果不传这个参数redux会简单把dispatch作为属性注入给组件，可以手动当做store.dispatch使用。</li>
+</ul>
+
       
     </div>
     <footer class="article-footer">
@@ -141,7 +184,21 @@
   <div class="article-content">
     <div class="entry">
       
-        
+        <p><a href="https://facebook.github.io/react-native/docs/getting-started.html" target="_blank" rel="external">文档</a></p>
+<h1 id="个人学习demo"><a href="#个人学习demo" class="headerlink" title="个人学习demo"></a>个人学习demo</h1><p><a href="https://github.com/xieQin/react-native-learning-starter" target="_blank" rel="external">react-native-learning-starter</a></p>
+<p>Android app</p>
+<p>主要实现的功能：</p>
+<ul>
+<li>splash页</li>
+<li>抽屉导航</li>
+<li>带网络请求的ListView</li>
+<li>界面切换及Android 返回按钮控制</li>
+<li>下拉刷新</li>
+</ul>
+<h1 id="总体感受"><a href="#总体感受" class="headerlink" title="总体感受"></a>总体感受</h1><p>如果只是用来实现简单的列表页+详情页，对于不熟悉Native开发的Web前端技术人员来说，React Native还是能很好地完成需求的，网络请求、UI视图交互、页面跳转均提供了很好的支持</p>
+<p>但是如果需要使用PackageManager,ActivityManager等组件的话，就需要通过React Native和Native混合开发了<br>个人觉得对于实现复杂的应用来说，目前的RN社区还是缺乏一些高质量的组件，在找不到好用的组件的情况下，或者说大部分组件拿来后都要大修大改的情况下，实现 App 的效率其实非常低，大家都在忙着做一些基础的控件，很多东西都没有打磨好</p>
+<h1 id="环境配置及安装"><a href="#环境配置及安装" class="headerlink" title="环境配置及安装"></a>环境配置及安装</h1><p>依照<a href="https://facebook.github.io/react-native/docs/getting-started.html" target="_blank" rel="external">教程</a>安装即可</p>
+
       
     </div>
     <footer class="article-footer">
@@ -395,7 +452,13 @@
   <div class="article-content">
     <div class="entry">
       
-        
+        <p><a href="https://github.com/vuejs/vuex" target="_blank" rel="external">vuex</a><br><a href="http://vuex.vuejs.org/en/index.html" target="_blank" rel="external">文档</a></p>
+<h1 id="总体流程"><a href="#总体流程" class="headerlink" title="总体流程"></a>总体流程</h1><p><img src="https://raw.githubusercontent.com/vuejs/vuex/master/docs/en/vuex.png" alt="总体流程"></p>
+<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p><a href="https://github.com/xieQin/quote-demo" target="_blank" rel="external">quote-demo</a></p>
+<h1 id="学习总结"><a href="#学习总结" class="headerlink" title="学习总结"></a>学习总结</h1><p>Vuex也是Flux的一种实现，是一个针对Vue特化的Flux，主要是为了配合Vue本身的响应式机制</p>
+<p>相较于Redux，同样具有单状态树和热重载的api，不过也少了一些在Vue的场景下并不契合的特性，<br>如强制的immutability、为了同构而设计得较为繁琐的 API、必须依赖第三方库才能相对高效率地获得状态树的局部状态等</p>
+<p>Vue + Vuex更为简洁，开发效率比React + Redux更高，更易于理解</p>
+
       
     </div>
     <footer class="article-footer">
@@ -439,70 +502,6 @@
 
   
   
-    <h3 class="article-title"><a href="/2016/03/14/Weui使用/"><span>Weui使用</span></a></h3>
-  
-
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2016/03/14/Weui使用/" rel="bookmark">
-        <time class="entry-date published" datetime="2016-03-14T08:49:13.000Z">
-          2016-03-14
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-        <div class="article-meta pull-left">
-          
-  
-
-  <span class="post-categories">
-    <i class="icon-categories"></i>
-    <a href="/categories/前端/">前端</a>
-  </span>
-
-
-          
-  
-
-  <span class="post-tags">
-    <i class="icon-tags"></i>
-    <a href="/tags/CSS/">CSS</a>
-  </span>
-
-
-        </div>
-        
-        <div class="article-meta pull-right">
-          <span>
-            <i class="icon-comments"></i>
-            <span>
-              <a href="http://www.cherishhsieh.com/2016/03/14/Weui使用/#comment">评论</a>
-            </span>
-          </span>
-        </div>
-        
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post article">
-
-  
-  
     <h3 class="article-title"><a href="/2016/02/26/express与koa/"><span>express与koa</span></a></h3>
   
 
@@ -523,7 +522,9 @@
   <div class="article-content">
     <div class="entry">
       
-        
+        <h1 id="Express"><a href="#Express" class="headerlink" title="Express"></a>Express</h1><p><a href="http://www.expressjs.com.cn/starter/installing.html" target="_blank" rel="external">Express 文档</a><br>Express主要解决了 请求路由 和 视图模板 的问题<br>没有强制的规范约束，因此各个示例中 Config，Controller，View的维护、管理、技巧真是各式各样</p>
+<h1 id="Koa总体流程图"><a href="#Koa总体流程图" class="headerlink" title="Koa总体流程图"></a>Koa总体流程图</h1><p><img src="http://berwin.github.io/ppts/koa/img/koa-flow.jpg" alt="Koa总体流程图"><br><a href="https://github.com/koajs/koa" target="_blank" rel="external">koa</a><br><a href="https://github.com/guo-yu/koa-guide" target="_blank" rel="external">koa-guide</a></p>
+
       
     </div>
     <footer class="article-footer">
@@ -587,7 +588,38 @@
   <div class="article-content">
     <div class="entry">
       
-        
+        <p>关于ES2015，我最大的感受便是，当你一开始使用它，就再也不想离开了:)</p>
+<p>学习资源：</p>
+<ul>
+<li><a href="http://es6.ruanyifeng.com/" target="_blank" rel="external">ECMAScript6入门</a></li>
+</ul>
+<h4 id="1-常用的es2015特性"><a href="#1-常用的es2015特性" class="headerlink" title="1. 常用的es2015特性"></a>1. 常用的es2015特性</h4><p>let<br>const<br>class<br>arrow function<br>template string<br>destructuring<br>default<br>reset arguments<br>import export</p>
+<h4 id="2-语法和特性"><a href="#2-语法和特性" class="headerlink" title="2. 语法和特性"></a>2. 语法和特性</h4><h6 id="2-1-let-const-块级作用域"><a href="#2-1-let-const-块级作用域" class="headerlink" title="2.1 let const 块级作用域"></a>2.1 let const 块级作用域</h6><h6 id="2-2-箭头函数"><a href="#2-2-箭头函数" class="headerlink" title="2.2 箭头函数"></a>2.2 箭头函数</h6><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">foo =&gt; foo + <span class="string">' world'</span></span><br><span class="line"></span><br><span class="line">(foo, bar) =&gt; foo + bar</span><br><span class="line"></span><br><span class="line">foo =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> foo + <span class="string">' world'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">(foo, bar) =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> foo + bar</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>箭头函数对上下文的绑定是强制性的，无法通过apply或call方法改变其上下文</p>
+<h6 id="2-3-模板字符串"><a href="#2-3-模板字符串" class="headerlink" title="2.3 模板字符串"></a>2.3 模板字符串</h6><ul>
+<li><p>支持变量注入</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> greet = <span class="string">`Hi, I'm <span class="subst">$&#123;name&#125;</span>, I am the <span class="subst">$&#123;title&#125;</span> at <span class="subst">$&#123;company&#125;</span>`</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>支持换行</p>
+</li>
+</ul>
+<h6 id="2-4-对象字面量扩展语法"><a href="#2-4-对象字面量扩展语法" class="headerlink" title="2.4 对象字面量扩展语法"></a>2.4 对象字面量扩展语法</h6><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> obj = &#123;</span><br><span class="line">  <span class="comment">// before</span></span><br><span class="line">  foo: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">'foo'</span></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  <span class="comment">// after</span></span><br><span class="line">  bar() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">'bar'</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h6 id="2-5-表达式解构"><a href="#2-5-表达式解构" class="headerlink" title="2.5 表达式解构"></a>2.5 表达式解构</h6><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">search</span>(<span class="params">query</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">  <span class="comment">// let users = [ ... ]</span></span><br><span class="line">  <span class="comment">// let posts = [ ... ]</span></span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">    users: users,</span><br><span class="line">    posts: posts</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h6 id="2-6-函数参数表达、传参"><a href="#2-6-函数参数表达、传参" class="headerlink" title="2.6 函数参数表达、传参"></a>2.6 函数参数表达、传参</h6><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fetchSomethings</span>(<span class="params">...args</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">doSomeOthers</span>(<span class="params">name, ...args</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h6 id="2-7-新的数据结构"><a href="#2-7-新的数据结构" class="headerlink" title="2.7 新的数据结构"></a>2.7 新的数据结构</h6><ul>
+<li>Set WeakSet</li>
+<li>Map WeakMap</li>
+</ul>
+<h6 id="2-8-类"><a href="#2-8-类" class="headerlink" title="2.8 类"></a>2.8 类</h6><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>(name, gender, age) &#123;</span><br><span class="line">    <span class="keyword">this</span>.name = name</span><br><span class="line">    <span class="keyword">this</span>.gender = gender</span><br><span class="line">    <span class="keyword">this</span>.age = age</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  isAdult() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.age &gt;= <span class="number">18</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> me = <span class="keyword">new</span> Person(<span class="string">'iwillwen'</span>, <span class="string">'man'</span>, <span class="number">19</span>)</span><br><span class="line"><span class="built_in">console</span>.log(me.isAdult()) <span class="comment">//=&gt; true</span></span><br></pre></td></tr></table></figure>
+<h6 id="2-9-生成器"><a href="#2-9-生成器" class="headerlink" title="2.9 生成器"></a>2.9 生成器</h6><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span>* <span class="title">fibo</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> a = <span class="number">1</span></span><br><span class="line">  <span class="keyword">let</span> b = <span class="number">1</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">yield</span> a</span><br><span class="line">  <span class="keyword">yield</span> b</span><br><span class="line"></span><br><span class="line">  <span class="keyword">while</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">    <span class="keyword">let</span> next = a + b</span><br><span class="line">    a = b</span><br><span class="line">    b = next</span><br><span class="line">    <span class="keyword">yield</span> next</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> generator = fibo()</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++)</span><br><span class="line">  <span class="built_in">console</span>.log(generator.next().value) <span class="comment">//=&gt; 1 1 2 3 5 8 13 21 34 55</span></span><br></pre></td></tr></table></figure>
+<p>生成器(Generator) 的运行原理<br><img src="http://static.open-open.com/lib/uploadImg/20151111/20151111142042_17.jpg" alt=""></p>
+<h6 id="2-10-模块化"><a href="#2-10-模块化" class="headerlink" title="2.10 模块化"></a>2.10 模块化</h6><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> name <span class="keyword">from</span> <span class="string">'module-name'</span></span><br><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> name <span class="keyword">from</span> <span class="string">'module-name'</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// module.js</span></span><br><span class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">method</span>(<span class="params"></span>) </span>&#123; <span class="comment">/* ... */</span> &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// main.js</span></span><br><span class="line"><span class="keyword">import</span> M <span class="keyword">from</span> <span class="string">'./module'</span></span><br><span class="line">M.method()</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// module.js</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  method1,</span><br><span class="line">  method2</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// main.js</span></span><br><span class="line"><span class="keyword">import</span> M <span class="keyword">from</span> <span class="string">'./module'</span></span><br><span class="line">M.method1()</span><br></pre></td></tr></table></figure>
+<h6 id="2-11-Promise"><a href="#2-11-Promise" class="headerlink" title="2.11 Promise"></a>2.11 Promise</h6><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fetchData</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>((resolve, reject) =&gt; &#123;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h6 id="2-12-Symbol"><a href="#2-12-Symbol" class="headerlink" title="2.12 Symbol"></a>2.12 Symbol</h6><p>Symbol 对象具有唯一性</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> privateDataStore = &#123;</span><br><span class="line">  set(val) &#123;</span><br><span class="line">    <span class="keyword">let</span> key = <span class="built_in">Symbol</span>(<span class="built_in">Math</span>.random().toString(<span class="number">32</span>).substr(<span class="number">2</span>))</span><br><span class="line">    <span class="keyword">this</span>[key] = val</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> key</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  get(key) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>[key]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> key = privateDateStore(<span class="string">'hello world'</span>)</span><br><span class="line">privateDataStore[key] <span class="comment">//=&gt; undefined</span></span><br><span class="line">privateDataStore.get(key) <span class="comment">//=&gt; hello world</span></span><br></pre></td></tr></table></figure>
+<h6 id="2-13-Proxy"><a href="#2-13-Proxy" class="headerlink" title="2.13 Proxy"></a>2.13 Proxy</h6><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> apiProxy = <span class="keyword">new</span> <span class="built_in">Proxy</span>(api, &#123;</span><br><span class="line">  get(receiver, name) &#123;</span><br><span class="line">    <span class="keyword">return</span> (<span class="function"><span class="keyword">function</span>(<span class="params">...args</span>) </span>&#123;</span><br><span class="line">      min.sadd(<span class="string">`log:<span class="subst">$&#123;name&#125;</span>`</span>, args)</span><br><span class="line">      <span class="keyword">return</span> receiver[name].apply(receiver, args)</span><br><span class="line">    &#125;).bind(receiver)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">api.getComments(artical.id)</span><br><span class="line">  .then(comments =&gt; &#123;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">  &#125;)</span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
@@ -631,13 +663,13 @@
 
   
   
-    <h3 class="article-title"><a href="/2015/11/30/CommonJs、AMD、UMD与Webpack/"><span>CommonJs、AMD、UMD与Webpack</span></a></h3>
+    <h3 class="article-title"><a href="/2015/11/30/CommonJs、AMD、UMD/"><span>CommonJs、AMD、UMD</span></a></h3>
   
 
 
   <div class="article-top-meta">
     <span class="posted-on">
-      <a href="/2015/11/30/CommonJs、AMD、UMD与Webpack/" rel="bookmark">
+      <a href="/2015/11/30/CommonJs、AMD、UMD/" rel="bookmark">
         <time class="entry-date published" datetime="2015-11-30T09:56:11.000Z">
           2015-11-30
         </time>
@@ -651,7 +683,30 @@
   <div class="article-content">
     <div class="entry">
       
-        
+        <p>js的模块化方案真是层出不穷，专门记录一下各个方案之间的差别</p>
+<p><a href="http://davidbcalhoun.com/2014/what-is-amd-commonjs-and-umd/" target="_blank" rel="external">参考文章</a></p>
+<h3 id="一、AMD"><a href="#一、AMD" class="headerlink" title="一、AMD"></a>一、AMD</h3><p>异步模块定义，专门为浏览器中js环境设计的规范<br>requirejs的模块化方案，在用requirejs做项目的时候接触到的</p>
+<p>基本api:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">define(id?, dependencies?, factory);</span><br></pre></td></tr></table></figure>
+<p>定义无依赖的模块：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">define(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">    mix: <span class="function"><span class="keyword">function</span>(<span class="params">source, target</span>) </span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;);</span><br><span class="line"><span class="string">`</span></span><br></pre></td></tr></table></figure>
+<p>定义有依赖的模块：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">define([<span class="string">'base'</span>], <span class="function"><span class="keyword">function</span>(<span class="params">base</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">        show: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="comment">// todo with module base</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">define([<span class="string">'data'</span>, <span class="string">'ui'</span>], <span class="function"><span class="keyword">function</span>(<span class="params">data, ui</span>) </span>&#123;</span><br><span class="line">    <span class="comment">// init here</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>定义数据对象模块:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">define(&#123;</span><br><span class="line">    users: [],</span><br><span class="line">    members: []</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="二、Commonjs"><a href="#二、Commonjs" class="headerlink" title="二、Commonjs"></a>二、Commonjs</h3><p>一个单独的文件就是一个模块<br>每一个模块都是一个单独的作用域，在一个文件定义的变量（还包括函数和类），都是私有的</p>
+<p>CommonJS定义的模块分为:</p>
+<ul>
+<li>模块引用(require)</li>
+<li>模块定义(exports)</li>
+<li>模块标识(module)</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// foo.js</span></span><br><span class="line"><span class="keyword">var</span> request = <span class="built_in">require</span>(<span class="string">'request'</span>).default(&#123; </span><br><span class="line">    timeout: <span class="number">4000</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line">    <span class="keyword">this</span>.re = <span class="string">''</span>;</span><br><span class="line">    <span class="keyword">this</span>.req = <span class="function"><span class="keyword">function</span>(<span class="params">url</span>)</span>&#123; </span><br><span class="line">        request(url,<span class="function"><span class="keyword">function</span>(<span class="params">error,status,res</span>)</span>&#123; </span><br><span class="line">            <span class="keyword">this</span>.re = res;</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// main.js</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> Foo = <span class="built_in">require</span>(<span class="string">'./foo'</span>);</span><br><span class="line"><span class="keyword">var</span> foo = <span class="keyword">new</span> Foo();</span><br><span class="line">foo.req(<span class="string">'http://www.baidu.com'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(foo.re);</span><br></pre></td></tr></table></figure>
+<p>CommonJS 加载模块是同步的，所以只有加载完成才能执行后面的操作</p>
+<h3 id="三、UMD"><a href="#三、UMD" class="headerlink" title="三、UMD"></a>三、UMD</h3><p>UMD是AMD和CommonJS的糅合</p>
+<p>UMD先判断是否支持Node.js的模块（exports）是否存在，存在则使用Node.js模块模式。<br>再判断是否支持AMD（define是否存在），存在则使用AMD方式加载模块</p>
+
       
     </div>
     <footer class="article-footer">
@@ -680,7 +735,7 @@
           <span>
             <i class="icon-comments"></i>
             <span>
-              <a href="http://www.cherishhsieh.com/2015/11/30/CommonJs、AMD、UMD与Webpack/#comment">评论</a>
+              <a href="http://www.cherishhsieh.com/2015/11/30/CommonJs、AMD、UMD/#comment">评论</a>
             </span>
           </span>
         </div>
@@ -715,7 +770,26 @@
   <div class="article-content">
     <div class="entry">
       
-        
+        <p><a href="http://reactjs.cn/react/docs/getting-started.html" target="_blank" rel="external">文档</a><br><a href="https://github.com/xieQin/react-learning/tree/master/tutorial" target="_blank" rel="external">个人学习demo</a></p>
+<p>React 主要概念：</p>
+<ul>
+<li>组件</li>
+<li>JSX</li>
+<li>Virtual DOM</li>
+<li>Data Flow</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; render &#125; <span class="keyword">from</span> <span class="string">'react-dom'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">HelloMessage</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</span><br><span class="line">  render() &#123;</span><br><span class="line">    <span class="keyword">return</span> &lt;div&gt;Hello &#123;this.props.name&#125;&lt;/div&gt;;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 加载组件到 DOM 元素 mountNode</span></span><br><span class="line">render(&lt;HelloMessage name="John" /&gt;, mountNode);</span><br></pre></td></tr></table></figure>
+<h1 id="组件生命周期"><a href="#组件生命周期" class="headerlink" title="组件生命周期"></a>组件生命周期</h1><ul>
+<li><code>componentWillMount</code></li>
+<li><code>componentDidMount</code></li>
+<li><code>componentWillReceiveProps</code></li>
+<li><code>shouldComponentUpdate</code></li>
+<li><code>componentWillUpdate</code></li>
+<li><code>componentDidUpdate</code></li>
+<li><code>componentWillUnmount</code></li>
+</ul>
+<p>一个简单例子：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; render &#125; <span class="keyword">from</span> <span class="string">'react-dom'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">LikeButton</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>(props) &#123;</span><br><span class="line">    <span class="keyword">super</span>(props);</span><br><span class="line">    <span class="keyword">this</span>.state = &#123; liked: <span class="literal">false</span> &#125;;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  handleClick(e) &#123;</span><br><span class="line">    <span class="keyword">this</span>.setState(&#123; liked: !<span class="keyword">this</span>.state.liked &#125;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  render() &#123;</span><br><span class="line">    <span class="keyword">const</span> text = <span class="keyword">this</span>.state.liked ? <span class="string">'like'</span> : <span class="string">'haven\'t liked'</span>;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      &lt;p onClick=&#123;this.handleClick.bind(this)&#125;&gt;</span><br><span class="line">          You &#123;text&#125; this. Click to toggle.</span><br><span class="line">      &lt;/p&gt;</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">render(</span><br><span class="line">    &lt;LikeButton /&gt;,</span><br><span class="line">    document.getElementById('example')</span><br><span class="line">);</span><br></pre></td></tr></table></figure></p>
+
       
     </div>
     <footer class="article-footer">
@@ -755,6 +829,114 @@
 
 
 
+  <article class="post article">
+
+  
+  
+    <h3 class="article-title"><a href="/2015/10/23/Markdown语法总结/"><span>Markdown语法总结</span></a></h3>
+  
+
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2015/10/23/Markdown语法总结/" rel="bookmark">
+        <time class="entry-date published" datetime="2015-10-23T05:45:12.000Z">
+          2015-10-23
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <h2 id="特殊字符自动转换"><a href="#特殊字符自动转换" class="headerlink" title="特殊字符自动转换"></a>特殊字符自动转换</h2><hr>
+<blockquote>
+<p>&amp;字符<br>&lt;字符</p>
+</blockquote>
+<h2 id="区块元素"><a href="#区块元素" class="headerlink" title="区块元素"></a>区块元素</h2><hr>
+<ul>
+<li><p>段落和换行</p>
+</li>
+<li><p>标题</p>
+</li>
+</ul>
+<blockquote>
+<p>类Setext形式<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">This is an H1</span><br><span class="line">=============</span><br><span class="line">This is an H2</span><br><span class="line">=============</span><br></pre></td></tr></table></figure></p>
+<p>类Atx形式<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 这是H1</span></span><br><span class="line"><span class="comment">## 这是H2</span></span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<ul>
+<li><p>区块引用</p>
+</li>
+<li><p>代码区块</p>
+</li>
+<li><p>分割线</p>
+</li>
+</ul>
+<h2 id="区段元素"><a href="#区段元素" class="headerlink" title="区段元素"></a>区段元素</h2><hr>
+<ul>
+<li><p>链接<br>这是<a href="http://www.cherishhsieh.com">我的blog</a></p>
+</li>
+<li><p>强调<br><strong>文本区域</strong></p>
+</li>
+<li><p>代码<br>Use the <code>printf()</code> function</p>
+</li>
+<li><p>图片<br><img src="https://avatars2.githubusercontent.com/u/6762420?v=3&amp;s=460" alt="Alt text"></p>
+</li>
+</ul>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><hr>
+<ul>
+<li><p>自动链接<br><a href="http://www.cherishhsieh.com">http://www.cherishhsieh.com</a><br><a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#x6f;&#58;&#x78;&#105;&#x65;&#x71;&#105;&#x6e;&#x31;&#57;&#57;&#49;&#64;&#103;&#x6d;&#97;&#105;&#108;&#46;&#99;&#x6f;&#x6d;">&#x78;&#105;&#x65;&#x71;&#105;&#x6e;&#x31;&#57;&#57;&#49;&#64;&#103;&#x6d;&#97;&#105;&#108;&#46;&#99;&#x6f;&#x6d;</a></p>
+</li>
+<li><p>反斜杠<br>*literal asterisks*</p>
+<blockquote>
+<p>\   反斜线<br>`   反引号<br>*   星号<br>_   底线<br>{}  花括号<br>[]  方括号<br>()  括弧<br>#   井字号<br>+   加号<br>-   减号<br>.   英文句点<br>!   惊叹号</p>
+</blockquote>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+        <div class="article-meta pull-left">
+          
+  
+
+  <span class="post-categories">
+    <i class="icon-categories"></i>
+    <a href="/categories/Markdown/">Markdown</a>
+  </span>
+
+
+          
+  
+
+  <span class="post-tags">
+    <i class="icon-tags"></i>
+    <a href="/tags/Markdown/">Markdown</a>
+  </span>
+
+
+        </div>
+        
+        <div class="article-meta pull-right">
+          <span>
+            <i class="icon-comments"></i>
+            <span>
+              <a href="http://www.cherishhsieh.com/2015/10/23/Markdown语法总结/#comment">评论</a>
+            </span>
+          </span>
+        </div>
+        
+    </footer>
+  </div>
+</article>
+
+
+
 
 <nav class="pagination">
   
@@ -774,17 +956,6 @@
 </p>
 </footer>
     
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-56794953-1', 'auto');
-    ga('send', 'pageview');
-
-</script>
-
   </div>
 </div>
 </body>
