@@ -44,10 +44,6 @@
     
       <li><a href="/archives">归档</a></li>
     
-      <li><a href="/about">关于</a></li>
-    
-      <li><a href="/links">链接</a></li>
-    
   </ul>
 </nav></header>
 
@@ -76,8 +72,8 @@
   <div class="article-content">
     <div class="entry">
       
-        <h1 id="原型指针"><a href="#原型指针" class="headerlink" title="原型指针"></a>原型指针</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="keyword">new</span> <span class="built_in">Array</span>();</span><br><span class="line">a.__proto__ === <span class="built_in">Array</span>.prototype <span class="comment">// true</span></span><br><span class="line"></span><br><span class="line">a.__proto__.__proto__ === <span class="built_in">Object</span>.prototype  <span class="comment">// true</span></span><br><span class="line"></span><br><span class="line">a.__proto__.__proto__.__proto__ === <span class="literal">null</span>  <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
-<h1 id="原型对象"><a href="#原型对象" class="headerlink" title="原型对象"></a>原型对象</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> Foo = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;</span><br><span class="line">Foo.__proto__ === <span class="built_in">Function</span>.prototype <span class="comment">// true</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a = <span class="keyword">new</span> Foo();</span><br><span class="line">a.__proto__ === Foo.prototype; <span class="comment">// true</span></span><br><span class="line"></span><br><span class="line">Foo.prototype.__proto__ === <span class="built_in">Object</span>.prototype; <span class="comment">// true</span></span><br><span class="line"></span><br><span class="line">Foo.prototype.constructor === Foo; <span class="comment">// true</span></span><br><span class="line">a.constructor === Foo; <span class="comment">// true</span></span><br><span class="line">a.constructor === Foo.prototype.constructor; <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+        <h1 id="原型指针"><a href="#原型指针" class="headerlink" title="原型指针"></a>原型指针</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="keyword">new</span> <span class="built_in">Array</span>();</div><div class="line">a.__proto__ === <span class="built_in">Array</span>.prototype <span class="comment">// true</span></div><div class="line"></div><div class="line">a.__proto__.__proto__ === <span class="built_in">Object</span>.prototype  <span class="comment">// true</span></div><div class="line"></div><div class="line">a.__proto__.__proto__.__proto__ === <span class="literal">null</span>  <span class="comment">// true</span></div></pre></td></tr></table></figure>
+<h1 id="原型对象"><a href="#原型对象" class="headerlink" title="原型对象"></a>原型对象</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> Foo = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;</div><div class="line">Foo.__proto__ === <span class="built_in">Function</span>.prototype <span class="comment">// true</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> a = <span class="keyword">new</span> Foo();</div><div class="line">a.__proto__ === Foo.prototype; <span class="comment">// true</span></div><div class="line"></div><div class="line">Foo.prototype.__proto__ === <span class="built_in">Object</span>.prototype; <span class="comment">// true</span></div><div class="line"></div><div class="line">Foo.prototype.constructor === Foo; <span class="comment">// true</span></div><div class="line">a.constructor === Foo; <span class="comment">// true</span></div><div class="line">a.constructor === Foo.prototype.constructor; <span class="comment">// true</span></div></pre></td></tr></table></figure>
 <h1 id="原型链"><a href="#原型链" class="headerlink" title="原型链"></a>原型链</h1><p>利用原型让一个引用类型继承另一个引用类型的属性和方法</p>
 <p>每个构造函数都有一个原型对象(prototype)，原型对象都包含一个指向构造函数的指针(constructor)，而实例都包含一个指向原型对象的内部指针(<strong>proto</strong>)</p>
 <p>只需要让原型对象等于另一个类型的实例，此时的原型对象将包含一个指向另一个原型的指针，相应地，另一个原型中也包含着一个指向另一个构造函数的指针</p>
@@ -113,28 +109,6 @@
 </article>
 
   
-	<div id="comment">
-	
-	
-	<!-- 多说评论框 start -->
-	 <div class="ds-thread" data-thread-key="/2015/04/10/Javascript-继承/" data-title="Javascript 继承" data-url="http://www.cherishhsieh.com/2015/04/10/Javascript-继承/"></div>
-	<!-- 多说评论框 end -->
-	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-	<script type="text/javascript">
-	var duoshuoQuery = {short_name:"cherishhsieh"};
-	  (function() {
-	    var ds = document.createElement('script');
-	    ds.type = 'text/javascript';ds.async = true;
-	    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-	    ds.charset = 'UTF-8';
-	    (document.getElementsByTagName('head')[0] 
-	     || document.getElementsByTagName('body')[0]).appendChild(ds);
-	  })();
-	  </script>
-	<!-- 多说公共JS代码 end -->
-	
-	</div>
-
 
 
 

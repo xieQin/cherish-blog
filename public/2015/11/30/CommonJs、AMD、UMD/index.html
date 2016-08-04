@@ -44,10 +44,6 @@
     
       <li><a href="/archives">归档</a></li>
     
-      <li><a href="/about">关于</a></li>
-    
-      <li><a href="/links">链接</a></li>
-    
   </ul>
 </nav></header>
 
@@ -80,13 +76,13 @@
 <p><a href="http://davidbcalhoun.com/2014/what-is-amd-commonjs-and-umd/" target="_blank" rel="external">参考文章</a></p>
 <h3 id="一、AMD"><a href="#一、AMD" class="headerlink" title="一、AMD"></a>一、AMD</h3><p>异步模块定义，专门为浏览器中js环境设计的规范<br>requirejs的模块化方案，在用requirejs做项目的时候接触到的</p>
 <p>基本api:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">define(id?, dependencies?, factory);</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">define(id?, dependencies?, factory);</div></pre></td></tr></table></figure>
 <p>定义无依赖的模块：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">define(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">    mix: <span class="function"><span class="keyword">function</span>(<span class="params">source, target</span>) </span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;);</span><br><span class="line"><span class="string">`</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">define(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> &#123;</div><div class="line">    mix: <span class="function"><span class="keyword">function</span>(<span class="params">source, target</span>) </span>&#123;</div><div class="line">    &#125;</div><div class="line">  &#125;;</div><div class="line">&#125;);</div><div class="line"><span class="string">`</span></div></pre></td></tr></table></figure>
 <p>定义有依赖的模块：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">define([<span class="string">'base'</span>], <span class="function"><span class="keyword">function</span>(<span class="params">base</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">        show: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="comment">// todo with module base</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">define([<span class="string">'data'</span>, <span class="string">'ui'</span>], <span class="function"><span class="keyword">function</span>(<span class="params">data, ui</span>) </span>&#123;</span><br><span class="line">    <span class="comment">// init here</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">define([<span class="string">'base'</span>], <span class="function"><span class="keyword">function</span>(<span class="params">base</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> &#123;</div><div class="line">        show: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">            <span class="comment">// todo with module base</span></div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;);</div><div class="line"></div><div class="line">define([<span class="string">'data'</span>, <span class="string">'ui'</span>], <span class="function"><span class="keyword">function</span>(<span class="params">data, ui</span>) </span>&#123;</div><div class="line">    <span class="comment">// init here</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <p>定义数据对象模块:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">define(&#123;</span><br><span class="line">    users: [],</span><br><span class="line">    members: []</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">define(&#123;</div><div class="line">    users: [],</div><div class="line">    members: []</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <h3 id="二、Commonjs"><a href="#二、Commonjs" class="headerlink" title="二、Commonjs"></a>二、Commonjs</h3><p>一个单独的文件就是一个模块<br>每一个模块都是一个单独的作用域，在一个文件定义的变量（还包括函数和类），都是私有的</p>
 <p>CommonJS定义的模块分为:</p>
 <ul>
@@ -94,8 +90,8 @@
 <li>模块定义(exports)</li>
 <li>模块标识(module)</li>
 </ul>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// foo.js</span></span><br><span class="line"><span class="keyword">var</span> request = <span class="built_in">require</span>(<span class="string">'request'</span>).default(&#123; </span><br><span class="line">    timeout: <span class="number">4000</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line">    <span class="keyword">this</span>.re = <span class="string">''</span>;</span><br><span class="line">    <span class="keyword">this</span>.req = <span class="function"><span class="keyword">function</span>(<span class="params">url</span>)</span>&#123; </span><br><span class="line">        request(url,<span class="function"><span class="keyword">function</span>(<span class="params">error,status,res</span>)</span>&#123; </span><br><span class="line">            <span class="keyword">this</span>.re = res;</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// main.js</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> Foo = <span class="built_in">require</span>(<span class="string">'./foo'</span>);</span><br><span class="line"><span class="keyword">var</span> foo = <span class="keyword">new</span> Foo();</span><br><span class="line">foo.req(<span class="string">'http://www.baidu.com'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(foo.re);</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// foo.js</span></div><div class="line"><span class="keyword">var</span> request = <span class="built_in">require</span>(<span class="string">'request'</span>).default(&#123; </div><div class="line">    timeout: <span class="number">4000</span></div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="built_in">module</span>.exports = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </div><div class="line">    <span class="keyword">this</span>.re = <span class="string">''</span>;</div><div class="line">    <span class="keyword">this</span>.req = <span class="function"><span class="keyword">function</span>(<span class="params">url</span>)</span>&#123; </div><div class="line">        request(url,<span class="function"><span class="keyword">function</span>(<span class="params">error,status,res</span>)</span>&#123; </div><div class="line">            <span class="keyword">this</span>.re = res;</div><div class="line">        &#125;);</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// main.js</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> Foo = <span class="built_in">require</span>(<span class="string">'./foo'</span>);</div><div class="line"><span class="keyword">var</span> foo = <span class="keyword">new</span> Foo();</div><div class="line">foo.req(<span class="string">'http://www.baidu.com'</span>);</div><div class="line"><span class="built_in">console</span>.log(foo.re);</div></pre></td></tr></table></figure>
 <p>CommonJS 加载模块是同步的，所以只有加载完成才能执行后面的操作</p>
 <h3 id="三、UMD"><a href="#三、UMD" class="headerlink" title="三、UMD"></a>三、UMD</h3><p>UMD是AMD和CommonJS的糅合</p>
 <p>UMD先判断是否支持Node.js的模块（exports）是否存在，存在则使用Node.js模块模式。<br>再判断是否支持AMD（define是否存在），存在则使用AMD方式加载模块</p>
@@ -129,28 +125,6 @@
 </article>
 
   
-	<div id="comment">
-	
-	
-	<!-- 多说评论框 start -->
-	 <div class="ds-thread" data-thread-key="/2015/11/30/CommonJs、AMD、UMD/" data-title="CommonJs、AMD、UMD" data-url="http://www.cherishhsieh.com/2015/11/30/CommonJs、AMD、UMD/"></div>
-	<!-- 多说评论框 end -->
-	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-	<script type="text/javascript">
-	var duoshuoQuery = {short_name:"cherishhsieh"};
-	  (function() {
-	    var ds = document.createElement('script');
-	    ds.type = 'text/javascript';ds.async = true;
-	    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-	    ds.charset = 'UTF-8';
-	    (document.getElementsByTagName('head')[0] 
-	     || document.getElementsByTagName('body')[0]).appendChild(ds);
-	  })();
-	  </script>
-	<!-- 多说公共JS代码 end -->
-	
-	</div>
-
 
 
 

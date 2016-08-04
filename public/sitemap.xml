@@ -2,184 +2,191 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.cherishhsieh.com/2016/06/11/React-Nactive%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</loc>
+    <loc>http://www.cherishhsieh.com/2016/07/20/Generator%E5%87%BD%E6%95%B0/</loc>
     
-    <lastmod>2016-07-03T01:43:06.340Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.cherishhsieh.com/2016/03/25/Vue%E4%B8%8EVuex/</loc>
-    
-    <lastmod>2016-07-03T01:41:03.878Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.cherishhsieh.com/2015/11/15/React%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</loc>
-    
-    <lastmod>2016-07-03T01:32:01.691Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.cherishhsieh.com/2016/02/26/express%E4%B8%8Ekoa/</loc>
-    
-    <lastmod>2016-07-03T01:26:38.743Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.cherishhsieh.com/2016/06/15/Redux%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</loc>
-    
-    <lastmod>2016-07-03T01:16:51.262Z</lastmod>
+    <lastmod>2016-07-20T10:22:45.627Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.cherishhsieh.com/links/index.html</loc>
     
-    <lastmod>2016-07-02T14:53:48.154Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.cherishhsieh.com/2015/09/09/Vue/</loc>
-    
-    <lastmod>2016-07-02T13:39:28.374Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.cherishhsieh.com/2015/04/10/Javascript-%E7%BB%A7%E6%89%BF/</loc>
-    
-    <lastmod>2016-07-02T12:08:12.506Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.cherishhsieh.com/2015/11/30/CommonJs%E3%80%81AMD%E3%80%81UMD/</loc>
-    
-    <lastmod>2016-07-02T11:53:46.603Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.cherishhsieh.com/2016/02/12/ES2015-%E6%80%BB%E7%BB%93/</loc>
-    
-    <lastmod>2016-07-02T11:44:44.597Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.cherishhsieh.com/2014/08/12/datatables-%E4%BD%BF%E7%94%A8/</loc>
-    
-    <lastmod>2016-07-02T11:11:12.331Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.cherishhsieh.com/2014/12/21/CSS%E7%BB%98%E5%88%B6%E4%B8%89%E8%A7%92%E5%BD%A2/</loc>
-    
-    <lastmod>2016-07-02T11:06:20.781Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.cherishhsieh.com/2015/08/30/jQuery%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB-%E4%BA%8C/</loc>
-    
-    <lastmod>2016-07-02T10:43:26.564Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.cherishhsieh.com/2015/08/21/jQuery%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/</loc>
-    
-    <lastmod>2016-07-02T10:43:22.530Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.cherishhsieh.com/2014/09/27/%E9%98%B2%E6%AD%A2%E9%87%8D%E5%A4%8D%E5%8F%91%E9%80%81ajax%E7%9A%84%E6%96%B9%E6%B3%95/</loc>
-    
-    <lastmod>2016-07-02T09:36:53.394Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.cherishhsieh.com/2015/07/25/%E4%BD%BF%E7%94%A8nodejs%E6%90%AD%E5%BB%BAweb%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
-    
-    <lastmod>2016-07-02T08:57:56.478Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.cherishhsieh.com/2015/03/25/%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6%E7%BB%91%E5%AE%9A/</loc>
-    
-    <lastmod>2016-07-01T03:24:18.808Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.cherishhsieh.com/2015/06/04/%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%A3%80%E6%B5%8B/</loc>
-    
-    <lastmod>2016-07-01T03:24:18.757Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.cherishhsieh.com/2016/05/20/react-router%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</loc>
-    
-    <lastmod>2016-07-01T03:24:18.705Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.cherishhsieh.com/2014/11/21/flexbox%E4%BC%B8%E7%BC%A9%E7%9B%92%E5%B8%83%E5%B1%80/</loc>
-    
-    <lastmod>2016-07-01T03:24:18.684Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.cherishhsieh.com/2015/04/04/Touch%E6%89%8B%E5%8A%BF/</loc>
-    
-    <lastmod>2016-07-01T03:24:18.612Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.cherishhsieh.com/2015/10/23/Markdown%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/</loc>
-    
-    <lastmod>2016-07-01T03:24:18.529Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.cherishhsieh.com/2015/05/23/Javascript%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/</loc>
-    
-    <lastmod>2016-07-01T03:24:18.487Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.cherishhsieh.com/2015/02/07/Javascript%E4%BA%8B%E4%BB%B6/</loc>
-    
-    <lastmod>2016-07-01T03:24:18.478Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.cherishhsieh.com/2016/03/27/Eslint%E4%BD%BF%E7%94%A8%E5%A4%87%E6%9F%A5/</loc>
-    
-    <lastmod>2016-07-01T03:24:18.457Z</lastmod>
+    <lastmod>2016-07-20T02:40:51.051Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.cherishhsieh.com/about/index.html</loc>
     
-    <lastmod>2016-06-28T13:40:29.163Z</lastmod>
+    <lastmod>2016-07-20T02:40:51.048Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.cherishhsieh.com/2014/09/27/%E9%98%B2%E6%AD%A2%E9%87%8D%E5%A4%8D%E5%8F%91%E9%80%81ajax%E7%9A%84%E6%96%B9%E6%B3%95/</loc>
+    
+    <lastmod>2016-07-20T02:40:51.044Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.cherishhsieh.com/2015/03/25/%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6%E7%BB%91%E5%AE%9A/</loc>
+    
+    <lastmod>2016-07-20T02:40:51.038Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.cherishhsieh.com/2015/06/04/%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%A3%80%E6%B5%8B/</loc>
+    
+    <lastmod>2016-07-20T02:40:51.035Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.cherishhsieh.com/2015/07/25/%E4%BD%BF%E7%94%A8nodejs%E6%90%AD%E5%BB%BAweb%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    
+    <lastmod>2016-07-20T02:40:51.033Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.cherishhsieh.com/2016/05/20/react-router%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</loc>
+    
+    <lastmod>2016-07-20T02:40:51.030Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.cherishhsieh.com/2014/11/21/flexbox%E4%BC%B8%E7%BC%A9%E7%9B%92%E5%B8%83%E5%B1%80/</loc>
+    
+    <lastmod>2016-07-20T02:40:51.027Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.cherishhsieh.com/2016/02/26/express%E4%B8%8Ekoa/</loc>
+    
+    <lastmod>2016-07-20T02:40:51.024Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.cherishhsieh.com/2014/08/12/datatables-%E4%BD%BF%E7%94%A8/</loc>
+    
+    <lastmod>2016-07-20T02:40:51.021Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.cherishhsieh.com/2016/03/25/Vue%E4%B8%8EVuex/</loc>
+    
+    <lastmod>2016-07-20T02:40:51.018Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.cherishhsieh.com/2015/09/09/Vue/</loc>
+    
+    <lastmod>2016-07-20T02:40:51.016Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.cherishhsieh.com/2015/04/04/Touch%E6%89%8B%E5%8A%BF/</loc>
+    
+    <lastmod>2016-07-20T02:40:51.013Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.cherishhsieh.com/2016/06/15/Redux%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</loc>
+    
+    <lastmod>2016-07-20T02:40:51.007Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.cherishhsieh.com/2015/11/15/React%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</loc>
+    
+    <lastmod>2016-07-20T02:40:51.004Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.cherishhsieh.com/2016/06/11/React-Nactive%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</loc>
+    
+    <lastmod>2016-07-20T02:40:51.001Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.cherishhsieh.com/2015/10/23/Markdown%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/</loc>
+    
+    <lastmod>2016-07-20T02:40:50.998Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.cherishhsieh.com/2015/08/21/Jquery%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/</loc>
+    
+    <lastmod>2016-07-20T02:40:50.996Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.cherishhsieh.com/2015/08/30/Jquery%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB-%E4%BA%8C/</loc>
+    
+    <lastmod>2016-07-20T02:40:50.991Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.cherishhsieh.com/2015/05/23/Javascript%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/</loc>
+    
+    <lastmod>2016-07-20T02:40:50.989Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.cherishhsieh.com/2015/02/07/Javascript%E4%BA%8B%E4%BB%B6/</loc>
+    
+    <lastmod>2016-07-20T02:40:50.984Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.cherishhsieh.com/2015/04/10/Javascript-%E7%BB%A7%E6%89%BF/</loc>
+    
+    <lastmod>2016-07-20T02:40:50.981Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.cherishhsieh.com/2016/03/27/Eslint%E4%BD%BF%E7%94%A8%E5%A4%87%E6%9F%A5/</loc>
+    
+    <lastmod>2016-07-20T02:40:50.978Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.cherishhsieh.com/2016/02/12/ES2015-%E6%80%BB%E7%BB%93/</loc>
+    
+    <lastmod>2016-07-20T02:40:50.973Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.cherishhsieh.com/2015/11/30/CommonJs%E3%80%81AMD%E3%80%81UMD/</loc>
+    
+    <lastmod>2016-07-20T02:40:50.969Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.cherishhsieh.com/2014/12/21/CSS%E7%BB%98%E5%88%B6%E4%B8%89%E8%A7%92%E5%BD%A2/</loc>
+    
+    <lastmod>2016-07-20T02:40:50.963Z</lastmod>
     
   </url>
   

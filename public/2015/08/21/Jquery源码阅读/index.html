@@ -44,10 +44,6 @@
     
       <li><a href="/archives">归档</a></li>
     
-      <li><a href="/about">关于</a></li>
-    
-      <li><a href="/links">链接</a></li>
-    
   </ul>
 </nav></header>
 
@@ -62,7 +58,7 @@
 
   <div class="article-top-meta">
     <span class="posted-on">
-      <a href="/2015/08/21/jQuery源码阅读/" rel="bookmark">
+      <a href="/2015/08/21/Jquery源码阅读/" rel="bookmark">
         <time class="entry-date published" datetime="2015-08-21T06:25:18.000Z">
           2015-08-21
         </time>
@@ -80,7 +76,7 @@
 <p>jQuery 版本：2.0.3<br>jQuery 源码学习笔记：<br><a href="http://www.cnblogs.com/aaronjs/p/3279314.html" target="_blank" rel="external">原文地址</a></p>
 </blockquote>
 <h1 id="1-整体架构"><a href="#1-整体架构" class="headerlink" title="1. 整体架构"></a>1. 整体架构</h1><p>Jquey的核心是从HTML文档中匹配元素后执行操作<br>如：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$(selector).append(html)</span><br><span class="line">$(selector).html(html).css()</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$(selector).append(html)</div><div class="line">$(selector).html(html).css()</div></pre></td></tr></table></figure>
 <p>具体步骤可分为:</p>
 <ul>
 <li><p>构造jQuery对象</p>
@@ -89,15 +85,15 @@
 </li>
 </ul>
 <h1 id="2-jQuery-构建"><a href="#2-jQuery-构建" class="headerlink" title="2. jQuery 构建"></a>2. jQuery 构建</h1><p>通过原型传递，把jQuery的原型传递给jQuery.prototype.init.prototype</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> jQuery = <span class="function"><span class="keyword">function</span>(<span class="params">selector, context</span>) </span>&#123;</span><br><span class="line"> <span class="keyword">return</span>  <span class="keyword">new</span> aQuery.prototype.init();</span><br><span class="line">&#125;</span><br><span class="line">jQuery.prototype = &#123;</span><br><span class="line">  init: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>;</span><br><span class="line">  &#125;,</span><br><span class="line">  name: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.age</span><br><span class="line">  &#125;,</span><br><span class="line">  age: <span class="number">20</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">jQuery.prototype.init.prototype = jQuery.prototype;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(jQuery().name()) <span class="comment">//20</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> jQuery = <span class="function"><span class="keyword">function</span>(<span class="params">selector, context</span>) </span>&#123;</div><div class="line"> <span class="keyword">return</span>  <span class="keyword">new</span> aQuery.prototype.init();</div><div class="line">&#125;</div><div class="line">jQuery.prototype = &#123;</div><div class="line">  init: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span>;</div><div class="line">  &#125;,</div><div class="line">  name: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.age</div><div class="line">  &#125;,</div><div class="line">  age: <span class="number">20</span></div><div class="line">&#125;</div><div class="line"></div><div class="line">jQuery.prototype.init.prototype = jQuery.prototype;</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(jQuery().name()) <span class="comment">//20</span></div></pre></td></tr></table></figure>
 <h1 id="3-链式调用"><a href="#3-链式调用" class="headerlink" title="3. 链式调用"></a>3. 链式调用</h1><p>实现链式的基本条件就是实例this的存在，并且是同一个</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">jQuery.prototype = &#123;</span><br><span class="line">  init: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>;</span><br><span class="line">  &#125;,</span><br><span class="line">  name: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jQuery.init().name()</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">jQuery.prototype = &#123;</div><div class="line">  init: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span>;</div><div class="line">  &#125;,</div><div class="line">  name: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span></div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">jQuery.init().name()</div></pre></td></tr></table></figure>
 <h1 id="4-插件接口"><a href="#4-插件接口" class="headerlink" title="4. 插件接口"></a>4. 插件接口</h1><p>为jQuery或者jQuery prototype添加属性方法</p>
 <p>jQuery.extend 对jQuery本身的属性和方法进行了扩展</p>
 <p>jQuery.fn.extend 对jQuery.fn的属性和方法进行了扩展</p>
 <p>jQuery.fn 是jQuery.prototype 的引用</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">jQuery.extend = jQuery.fn.extend = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">jQuery.extend = jQuery.fn.extend = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h1 id="5-总结"><a href="#5-总结" class="headerlink" title="5. 总结"></a>5. 总结</h1><ul>
 <li>通过new jQuery.fn.init() 构建一个新的对象，拥有init构造器的prototype原型对象的方法</li>
 <li>通过改变prorotype指针的指向，让这个新的对象也指向了jQuery类的原型prototype</li>
@@ -132,28 +128,6 @@
 </article>
 
   
-	<div id="comment">
-	
-	
-	<!-- 多说评论框 start -->
-	 <div class="ds-thread" data-thread-key="/2015/08/21/jQuery源码阅读/" data-title="jQuery源码阅读" data-url="http://www.cherishhsieh.com/2015/08/21/jQuery源码阅读/"></div>
-	<!-- 多说评论框 end -->
-	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-	<script type="text/javascript">
-	var duoshuoQuery = {short_name:"cherishhsieh"};
-	  (function() {
-	    var ds = document.createElement('script');
-	    ds.type = 'text/javascript';ds.async = true;
-	    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-	    ds.charset = 'UTF-8';
-	    (document.getElementsByTagName('head')[0] 
-	     || document.getElementsByTagName('body')[0]).appendChild(ds);
-	  })();
-	  </script>
-	<!-- 多说公共JS代码 end -->
-	
-	</div>
-
 
 
 
