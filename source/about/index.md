@@ -9,4 +9,4 @@ date: 2018-12-23 15:40:05
 - php, python 开发
 - 使用Vue.js, React, TypeScript
 - 关注 Flutter
-- 联系我 <xieq09@fudan.edu.cn>
+- 联系我 <xieqin1991@gmail.com>
