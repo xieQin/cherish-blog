@@ -46,7 +46,8 @@ date: 2021-10-20 14:00:02
 
 ### 关于我
 - 前端工程师
-- NodeJs 开发
-- php, python 开发
 - 使用Vue.js, React, TypeScript
-- 关注 Flutter
+- Golang 开发
+- NodeJs 开发
+- Python, Php 开发
+- 关注 Web 3.0, Flutter

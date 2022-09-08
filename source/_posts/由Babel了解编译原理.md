@@ -5,10 +5,6 @@ tags: Babel
 categories: 编译原理
 ---
 
-```markdown
-本文首发于 http://CSDN.NET《程序员》杂志 2017 年 12 月刊
-```
-
 Babel编译流程：词法分析、语法分析、语义分析、中间代码生成、中间代码优化、目标代码生成
 
 Babel使用的语法解析器是Babylon，抽象语法树的类型定义参考了Mozilla JS 引擎 SpiderMonkey，同时支持对 Flow、JSX、TypeScript 语法的解析

@@ -52,3 +52,4 @@ npm-debug.log
 .deploy_git/
 public/
 db.json
+yarn.lock
